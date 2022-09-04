@@ -1,0 +1,44 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+
+//font-size
+$smallfontsize: 13px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+
+.App-header {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+}
+.App-header .navbar {
+  height: 80px;
+  // background-color: $colorwhite;
+  font-size: $mediumfontsize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.App-header .nav-link-left ul {
+  display: flex;
+}
+.App-header .nav-link-left ul .navbar-logo {
+  margin-right: 12px;
+  padding: 0 10px;
+}
+.App-header .nav-link-left ul li {
+  padding: 0 10px;
+}
+.App-header .nav-link-right ul {
+  display: flex;
+}
+.App-header .nav-link-right ul li {
+  padding: 0 10px;
+}
+.App-header .nav-link-right ul li .nav-join-now {
+  padding: 8px 12px;
+}
+

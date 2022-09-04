@@ -1,0 +1,96 @@
+.user-profile {
+  background-color: #f9f9f9;
+}
+
+.user-profile .cover-img {
+  margin-bottom: -266px;
+}
+
+.user-profile .cover-img .cover-img-container {
+  height: 266px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.user-profile .user-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 130px;
+}
+
+.user-profile .user-detail .user-info {
+  -webkit-box-shadow: 0 1px 3px #6666;
+          box-shadow: 0 1px 3px #6666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.user-profile .user-detail .user-info img {
+  width: 110px;
+  border-radius: 100%;
+}
+
+.user-profile .user-detail .user-info .user-name {
+  font-size: 22px;
+}
+
+.user-profile .user-detail .user-info .title li {
+  font-size: 16px;
+}
+
+.user-profile .user-detail .user-info .contact-me {
+  width: 100%;
+}
+
+.user-profile .user-detail .user-info .contact-me li a {
+  font-size: 16px;
+  display: block;
+  padding: 8px 0;
+}
+
+.user-profile .user-detail .user-info .description {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.user-profile .user-detail .user-info .description span {
+  color: #6666;
+}
+
+.user-profile .user-detail .user-info img,
+.user-profile .user-detail .user-info .user-name,
+.user-profile .user-detail .user-info .title,
+.user-profile .user-detail .user-info .location,
+.user-profile .user-detail .user-info .contact-me,
+.user-profile .user-detail .user-info .description {
+  margin-bottom: 15px;
+}
+
+.user-works {
+  margin-top: 186px;
+  margin-left: 50px;
+}
+
+.user-works .user-works-container .user-works-heading {
+  font-size: 22px;
+}
+/*# sourceMappingURL=userprofile.css.map */

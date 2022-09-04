@@ -1,0 +1,77 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+
+//font-size
+$smallfontsize: 13px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+
+// .App div {
+//   border-bottom: 1px solid black;
+// }
+
+//
+.page {
+  max-width: 2186px;
+  margin: 0 auto;
+}
+
+@media (max-width: 2186px) {
+  .page {
+  padding: 0 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page {
+  padding: 0 50px;
+  }
+}
+//
+
+.h1,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.a {
+  color: $colorgrey;
+  cursor: pointer;
+}
+
+.a:hover {
+  color: $colorblack;
+}
+
+.button-styling {
+  color: $colorwhite;
+  border: 1px solid $colorblack;
+  border-radius: 5px;
+  background-color: $colorblack;
+}
+
+.button-styling:hover {
+  color: $colorblack;
+  background-color: $colorwhite;
+}
+
+.button-styling-2 {
+  color: $colorblack;
+  border: 1px solid $colorblack;
+  border-radius: 5px;
+  background-color: $colorwhite;
+}
+
+.button-styling-2:hover {
+  color: $colorwhite;
+  background-color: $colorblack;
+}

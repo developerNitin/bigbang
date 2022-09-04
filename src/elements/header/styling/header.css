@@ -1,0 +1,50 @@
+.App-header {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+}
+
+.App-header .navbar {
+  height: 80px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+}
+
+.App-header .nav-link-left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App-header .nav-link-left ul .navbar-logo {
+  margin-right: 12px;
+  padding: 0 10px;
+}
+
+.App-header .nav-link-left ul li {
+  padding: 0 10px;
+}
+
+.App-header .nav-link-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.App-header .nav-link-right ul li {
+  padding: 0 10px;
+}
+
+.App-header .nav-link-right ul li .nav-join-now {
+  padding: 8px 12px;
+}
+/*# sourceMappingURL=header.css.map */

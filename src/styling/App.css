@@ -1,0 +1,62 @@
+.page {
+  max-width: 2186px;
+  margin: 0 auto;
+}
+
+@media (max-width: 2186px) {
+  .page {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .page {
+    padding: 0 50px;
+  }
+}
+
+.h1,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.a {
+  color: #666666;
+  cursor: pointer;
+}
+
+.a:hover {
+  color: #010101;
+}
+
+.button-styling {
+  color: #ffffff;
+  border: 1px solid #010101;
+  border-radius: 5px;
+  background-color: #010101;
+}
+
+.button-styling:hover {
+  color: #010101;
+  background-color: #ffffff;
+}
+
+.button-styling-2 {
+  color: #010101;
+  border: 1px solid #010101;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.button-styling-2:hover {
+  color: #ffffff;
+  background-color: #010101;
+}
+/*# sourceMappingURL=App.css.map */
