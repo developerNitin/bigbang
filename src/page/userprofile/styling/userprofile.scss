@@ -35,11 +35,15 @@ $largefontsize: 22px;
   align-items: center;
   text-align: center;
   width: 300px;
+  margin-bottom: auto;
   background-color: $colorwhite;
   padding: 30px;
-  img {
-    width: 110px;
-    border-radius: 100%;
+  .user-img {
+    height: 110px;
+    img {
+      height: 110px;
+      border-radius: 100%;
+    }
   }
   .user-name {
     font-size: $largefontsize;
@@ -68,23 +72,61 @@ $largefontsize: 22px;
 }
 
 .user-profile .user-detail .user-info {
-  img,
+  .user-img,
   .user-name,
   .title,
   .location,
   .contact-me,
   .description {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 
-//
+//------
 
-.user-works {
+.user-profile .user-works {
+  display: block;
   margin-top: 186px;
-  margin-left: 50px;
+  margin-left: 30px;
+  flex: 1;
 }
 
-.user-works .user-works-container .user-works-heading{
+.user-profile .user-works .user-works-heading {
   font-size: $largefontsize;
+}
+
+.user-profile .user-works .user-project-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.user-profile .user-works .user-project-wrap .user-project {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  $colorgrey: #6666;
+  box-shadow: 0 1px 3px $colorgrey;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: $mediumfontsize;
+  }
+  .user-project-detail {
+    padding: 20px;
+    font-size: $mediumfontsize;
+    .user-project-heading,.user-project-title {
+      margin-bottom: 10px;
+    }
+  }
+  .user-project-pricing {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.user-profile .user-works .user-works-heading,
+.user-profile .user-works .user-project-wrap .user-project {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }

@@ -31,6 +31,7 @@ function App() {
                     since={i.since}
                     location={i.location}
                     description={i.description}
+                    products={i.products}
                   />
                 }
               />

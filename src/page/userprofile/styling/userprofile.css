@@ -39,12 +39,17 @@
           align-items: center;
   text-align: center;
   width: 300px;
+  margin-bottom: auto;
   background-color: #ffffff;
   padding: 30px;
 }
 
-.user-profile .user-detail .user-info img {
-  width: 110px;
+.user-profile .user-detail .user-info .user-img {
+  height: 110px;
+}
+
+.user-profile .user-detail .user-info .user-img img {
+  height: 110px;
   border-radius: 100%;
 }
 
@@ -76,21 +81,77 @@
   color: #6666;
 }
 
-.user-profile .user-detail .user-info img,
+.user-profile .user-detail .user-info .user-img,
 .user-profile .user-detail .user-info .user-name,
 .user-profile .user-detail .user-info .title,
 .user-profile .user-detail .user-info .location,
 .user-profile .user-detail .user-info .contact-me,
 .user-profile .user-detail .user-info .description {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
-.user-works {
+.user-profile .user-works {
+  display: block;
   margin-top: 186px;
-  margin-left: 50px;
+  margin-left: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.user-works .user-works-container .user-works-heading {
+.user-profile .user-works .user-works-heading {
   font-size: 22px;
+}
+
+.user-profile .user-works .user-project-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.user-profile .user-works .user-project-wrap .user-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 1px 3px #6666;
+          box-shadow: 0 1px 3px #6666;
+}
+
+.user-profile .user-works .user-project-wrap .user-project img {
+  width: 100%;
+}
+
+.user-profile .user-works .user-project-wrap .user-project h1 {
+  font-size: 16px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-detail {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading, .user-profile .user-works .user-project-wrap .user-project .user-project-detail .user-project-title {
+  margin-bottom: 10px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.user-profile .user-works .user-works-heading,
+.user-profile .user-works .user-project-wrap .user-project {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=userprofile.css.map */

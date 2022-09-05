@@ -1,6 +1,7 @@
 import "./styling/userprofile.css";
 
 import Sampleimg from "./userdata/sample-profile-picture.png";
+import Sampleimg2 from "./userdata/sample-product-img.png";
 
 function Userprofile(props) {
   return (
@@ -12,7 +13,9 @@ function Userprofile(props) {
       </div>
       <div className="page user-detail">
         <div className="user-info">
-          <img src={Sampleimg} />
+          <div className="user-img">
+            <img src={Sampleimg} />
+          </div>
           <h1 className="h1 user-name">{props.name}</h1>
           <ul className="ul title">
             <li>{props.title}</li>
@@ -34,10 +37,28 @@ function Userprofile(props) {
           </p> */}
         </div>
         <div className="user-works">
-          <div className="user-works-container">
-            <h1 className="h1 user-works-heading">Works</h1>
+          <h1 className="h1 user-works-heading">Works</h1>
+          <div className="user-project-wrap">
+            {props.products.map((i, idx) => {
+              return (
+                <div key={idx} className="user-project">
+                <a>
+                  <img className="user-project-img" src={Sampleimg2} />
+                  <div className="user-project-detail">
+                    <h1 className="h1 user-project-heading">{i.heading}</h1>
+                    <p className="p user-project-title">{i.title}</p>
+                    <div className="user-project-pricing">
+                      <span>Pricing:</span>
+                      <span>{i.pricing}</span>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
+        ;
       </div>
     </div>
   );

@@ -19,12 +19,23 @@ const Userdata = [
     skills: {
       1: "Digital marketing",
       2: "Illustration",
-      3: "Web development"
+      3: "Web development",
     },
     education: "B.Sc. - Bs Commerce",
     certification: "Certified In Commerce Industry",
-    coverImg: "assets/coverimg/coverImg.jpeg"
-  }
+    coverImg: "assets/coverimg/coverImg.jpeg",
+    products: [
+      { heading: "Bigbang", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+    ],
+  },
 ];
 
 export default Userdata;
