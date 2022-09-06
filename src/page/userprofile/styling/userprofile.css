@@ -21,12 +21,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 130px;
 }
 
 .user-profile .user-detail .user-info {
-  -webkit-box-shadow: 0 1px 3px #6666;
-          box-shadow: 0 1px 3px #6666;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +39,8 @@
   margin-bottom: auto;
   background-color: #ffffff;
   padding: 30px;
+  -webkit-box-shadow: 0 1px 3px gainsboro;
+          box-shadow: 0 1px 3px gainsboro;
 }
 
 .user-profile .user-detail .user-info .user-img {
@@ -78,7 +77,7 @@
 }
 
 .user-profile .user-detail .user-info .description span {
-  color: #6666;
+  color: #666666;
 }
 
 .user-profile .user-detail .user-info .user-img,
@@ -91,7 +90,6 @@
 }
 
 .user-profile .user-works {
-  display: block;
   margin-top: 186px;
   margin-left: 30px;
   -webkit-box-flex: 1;
@@ -119,8 +117,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0 1px 3px #6666;
-          box-shadow: 0 1px 3px #6666;
+  -webkit-box-shadow: 0 1px 3px gainsboro;
+          box-shadow: 0 1px 3px gainsboro;
 }
 
 .user-profile .user-works .user-project-wrap .user-project img {

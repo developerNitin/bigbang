@@ -42,23 +42,22 @@ function Userprofile(props) {
             {props.products.map((i, idx) => {
               return (
                 <div key={idx} className="user-project">
-                <a>
-                  <img className="user-project-img" src={Sampleimg2} />
-                  <div className="user-project-detail">
-                    <h1 className="h1 user-project-heading">{i.heading}</h1>
-                    <p className="p user-project-title">{i.title}</p>
-                    <div className="user-project-pricing">
-                      <span>Pricing:</span>
-                      <span>{i.pricing}</span>
+                  <a>
+                    <img className="user-project-img" src={Sampleimg2} />
+                    <div className="user-project-detail">
+                      <h1 className="h1 user-project-heading">{i.heading}</h1>
+                      <p className="p user-project-title">{i.title}</p>
+                      <div className="user-project-pricing">
+                        <span>Pricing:</span>
+                        <span>{i.pricing}</span>
+                      </div>
                     </div>
-                  </div>
                   </a>
                 </div>
               );
             })}
           </div>
         </div>
-        ;
       </div>
     </div>
   );

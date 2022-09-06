@@ -5,6 +5,7 @@ import Header from "./elements/header/header";
 //pages
 import MainPage from "./page/mainPage/mainPage";
 import Userprofile from "./page/userprofile/userprofile";
+import Product from "./page/product/product";
 
 //user-data
 import Userdata from "./page/userprofile/userdata/userdata";
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="product" element={<Product/>} />
           {Userdata.map((i, idx) => {
             return (
               <Route
