@@ -15,6 +15,9 @@ const Product = () => {
             <a className="a product-info-user-name">- Angela Su</a>
             <div className="product-review">
               <a className="a">
+                <span>
+                  
+                </span>
                 4.9 {"("}30{")"}
               </a>
             </div>
