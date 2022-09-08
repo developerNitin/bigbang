@@ -13,7 +13,6 @@ import Userdata from "./page/userprofile/userdata/userdata";
 function App() {
   return (
     <Router>
-      {" "}
       <div className="App">
         <Header />
         <Routes>

@@ -27,11 +27,10 @@ function Userprofile(props) {
           <p className="p location">
             <a className="a">{props.location}</a>
           </p>
-          <ul className="ul contact-me">
-            <li>
-              <a className="a button-styling">Contact me</a>
-            </li>
-          </ul>
+          <div className="user-detail-links">
+              <a className="a button-styling follow-me">CONTACT ME</a>
+              <a className="a button-styling-2">FOLLOW</a>
+          </div>
           {/* <p className="p description">
             Description: <span>{props.description}</span>
           </p> */}
@@ -41,7 +40,7 @@ function Userprofile(props) {
           <div className="user-project-wrap">
             {props.products.map((i, idx) => {
               return (
-                <div key={idx} className="user-project">
+                <div key={idx} className="user-project border">
                   <a>
                     <img className="user-project-img" src={Sampleimg2} />
                     <div className="user-project-detail">

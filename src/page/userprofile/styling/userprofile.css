@@ -60,14 +60,17 @@
   font-size: 16px;
 }
 
-.user-profile .user-detail .user-info .contact-me {
+.user-profile .user-detail .user-info .user-detail-links {
   width: 100%;
 }
 
-.user-profile .user-detail .user-info .contact-me li a {
+.user-profile .user-detail .user-info .user-detail-links a {
   font-size: 16px;
   display: block;
-  padding: 8px 0;
+}
+
+.user-profile .user-detail .user-info .user-detail-links .follow-me {
+  margin-bottom: 10px;
 }
 
 .user-profile .user-detail .user-info .description {
@@ -117,8 +120,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0 1px 3px gainsboro;
-          box-shadow: 0 1px 3px gainsboro;
 }
 
 .user-profile .user-works .user-project-wrap .user-project img {

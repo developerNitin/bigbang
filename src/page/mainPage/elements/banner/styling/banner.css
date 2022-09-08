@@ -48,8 +48,8 @@
   border-right: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .main-page .banner .search-form a {
@@ -57,6 +57,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -80,5 +81,6 @@
   padding: 4px 12px;
   margin-left: 12px;
   border-radius: 100px;
+  font-size: 13px;
 }
 /*# sourceMappingURL=banner.css.map */

@@ -49,13 +49,14 @@ $largefontsize: 22px;
   border-right: 0;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
 }
 
 .main-page .banner .search-form a {
   height: 44px;
   display: flex;
+  padding: 0;
   align-items: center;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -74,4 +75,5 @@ $largefontsize: 22px;
   padding: 4px 12px;
   margin-left: 12px;
   border-radius: 100px;
+  font-size: $smallfontsize;
 }

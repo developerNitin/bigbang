@@ -2,11 +2,16 @@
 $colorblack: #010101;
 $colorgrey: #666666;
 $colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
 
 //font-size
 $smallfontsize: 13px;
 $mediumfontsize: 16px;
 $largefontsize: 22px;
+
+body {
+  background-color: $lightbluebgcolor;
+}
 
 .App-header {
   position: fixed;
@@ -38,7 +43,7 @@ $largefontsize: 22px;
 .App-header .nav-link-right ul li {
   padding: 0 10px;
 }
-.App-header .nav-link-right ul li .nav-join-now {
-  padding: 8px 12px;
-}
+// .App-header .nav-link-right ul li .nav-join-now {
+//   padding: 8px 12px;
+// }
 

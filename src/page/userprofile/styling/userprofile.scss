@@ -52,12 +52,14 @@ $xlargefontsize: 26px;
       font-size: $mediumfontsize;
     }
   }
-  .contact-me {
+  .user-detail-links {
     width: 100%;
-    li a {
+    a {
       font-size: $mediumfontsize;
       display: block;
-      padding: 8px 0;
+    }
+    .follow-me{
+      margin-bottom: 10px;
     }
   }
   .description {
@@ -102,7 +104,6 @@ $xlargefontsize: 26px;
   display: flex;
   background-color: white;
   flex-direction: column;
-  box-shadow: 0 1px 3px rgb(220, 220, 220);
   img {
     width: 100%;
   }

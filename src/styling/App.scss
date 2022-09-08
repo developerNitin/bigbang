@@ -2,6 +2,7 @@
 $colorblack: #010101;
 $colorgrey: #666666;
 $colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
 
 //font-size
 $smallfontsize: 13px;
@@ -12,18 +13,13 @@ $largefontsize: 22px;
 //   border-bottom: 1px solid black;
 // }
 
-//
+
 .page {
   max-width: 2186px;
   margin: 0 auto;
-  margin-top: 130px;
-    padding: 0 100px;
-}
-
-@media (max-width: 2186px) {
-  .page {
-    padding: 0 100px;
-  }
+  margin-top: 80px;
+  padding: 0 100px;
+  padding-top: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -54,11 +50,19 @@ $largefontsize: 22px;
   color: $colorblack;
 }
 
+.border {
+  border: 1px solid #e8e8e8;
+}
+
 .button-styling {
   color: $colorwhite;
+  text-align: center;
   border: 1px solid $colorblack;
   border-radius: 5px;
   background-color: $colorblack;
+  padding: 8px 12px;
+  border-radius: 100px;
+  font-size: $mediumfontsize;
 }
 
 .button-styling:hover {
@@ -68,9 +72,13 @@ $largefontsize: 22px;
 
 .button-styling-2 {
   color: $colorblack;
+  text-align: center;
   border: 1px solid $colorblack;
   border-radius: 5px;
   background-color: $colorwhite;
+  padding: 8px 12px;
+  border-radius: 100px;
+  font-size: $mediumfontsize;
 }
 
 .button-styling-2:hover {

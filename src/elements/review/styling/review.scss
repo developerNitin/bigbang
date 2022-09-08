@@ -1,0 +1,46 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 13px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+$xlargefontsize: 32px;
+
+.review {
+  flex: 1;
+}
+
+.review .review-wrap {
+  padding: 30px 20px;
+  background-color: $colorwhite;
+  .post-a-comment {
+    display: flex;
+    flex-direction: column;
+    .post-a-comment-input-field {
+      display: flex;
+      margin-bottom: 20px;
+      img {
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: auto;
+      }
+      textarea {
+        flex: 1;
+        font-size: $mediumfontsize;
+        padding: 10px;
+        height: 100px;
+      }
+    }
+    .post-a-comment-button {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        font-size: $smallfontsize;
+      }
+    }
+  }
+}

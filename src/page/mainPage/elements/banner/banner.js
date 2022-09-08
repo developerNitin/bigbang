@@ -20,7 +20,7 @@ const Banner = () => {
           <form>
             <input></input>
             <a className="a button-styling">
-              <span>Search</span>
+              <span>SEARCH</span>
             </a>
           </form>
         </div>
