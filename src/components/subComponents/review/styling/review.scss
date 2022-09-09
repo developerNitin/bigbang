@@ -1,0 +1,72 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 13px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+$xlargefontsize: 32px;
+
+.review {
+  flex: 1;
+}
+
+.review .review-wrap {
+  background-color: $colorwhite;
+  .post-a-comment {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    .post-a-comment-input-field {
+      display: flex;
+      margin-bottom: 20px;
+      img {
+        width: 50px;
+        margin-right: 20px;
+        margin-bottom: auto;
+      }
+      textarea {
+        flex: 1;
+        font-size: $mediumfontsize;
+        padding: 10px;
+        height: 100px;
+      }
+    }
+    .post-a-comment-button {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        font-size: $smallfontsize;
+      }
+    }
+  }
+}
+
+.review .public-review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -30px;
+  padding: 30px;
+}
+
+.review .public-review .public-review-wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  .public-person-img {
+    width: 50px;
+    margin-right: 20px;
+    img {
+      width: 50px;
+      border-radius: 50px;
+    }
+  }
+
+  .public-person-name {
+    font-size: $mediumfontsize;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,147 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 14px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+$xlargefontsize: 26px;
+
+.user-profile {
+  background-color: $lightbluebgcolor;
+  .user-profile-wrap {
+    margin-top: -186px;
+  }
+}
+
+.user-profile .cover-img .cover-img-container {
+  height: 266px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.user-profile .user-detail {
+  display: flex;
+}
+.user-profile .user-detail .user-detail-wrap {
+  display: flex;
+  height: 270px;
+  align-items: center;
+  text-align: left;
+  background-color: $colorwhite;
+}
+
+.user-profile .user-detail .user-detail-wrap .user-detail-wrap-second-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  padding-left: 0px;
+  .user-detail-wrap-second-child-first-child {
+    margin-right: 30px;
+  }
+}
+
+.user-profile .user-detail .user-detail-wrap {
+  .user-img {
+    display: flex;
+    height: 210px;
+    padding: 30px;
+    img {
+      flex: 1;
+    }
+  }
+  .user-name {
+    font-size: $largefontsize;
+  }
+  .title {
+    li {
+      font-size: $mediumfontsize;
+    }
+  }
+  .user-detail-links {
+    display: flex;
+    width: 320px;
+    a {
+      font-size: $mediumfontsize;
+      display: block;
+      flex: 1;
+    }
+    .follow-me {
+      margin-right: 10px;
+    }
+  }
+  .description {
+    text-align: left;
+    font-size: $mediumfontsize;
+    margin-top: 10px;
+    span {
+      color: $colorgrey;
+    }
+  }
+}
+
+.user-profile .user-detail {
+  .user-name,
+  .title,
+  .location,
+  .contact-me,
+  .description {
+    margin-bottom: 10px;
+  }
+  .location {
+    margin-bottom: 20px;
+  }
+}
+
+//------
+
+
+.user-profile .user-works .user-works-heading {
+  font-size: $largefontsize;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-profile .user-works .user-project-wrap {
+  display: grid;
+  margin-right: -20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.user-profile .user-works .user-project-wrap .user-project {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  margin-right: 20px;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: $mediumfontsize;
+  }
+  .user-project-detail {
+    padding: 20px;
+    .user-project-heading,
+    .user-project-title {
+      margin-bottom: 5px;
+      font-size: $smallfontsize;
+    }
+    .user-project-heading {
+      font-size: $mediumfontsize;
+    }
+  }
+  .user-project-pricing {
+    display: flex;
+    justify-content: space-between;
+    font-size: $smallfontsize;
+  }
+}
+
+.user-profile .user-works .user-works-heading,
+.user-profile .user-works .user-project-wrap .user-project {
+  margin-bottom: 20px;
+}

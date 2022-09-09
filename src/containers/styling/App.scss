@@ -1,0 +1,103 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 14px;
+$mediumfontsize: 16px;
+$largefontsize: 22px;
+
+// .App div {
+//   border-bottom: 1px solid black;
+// }
+
+.page {
+  max-width: 2186px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 0 100px;
+  padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    padding: 0 50px;
+  }
+}
+//
+
+.h1,
+.p {
+  margin: 0;
+  padding: 0;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.a {
+  color: $colorgrey;
+  cursor: pointer;
+}
+
+.a:hover {
+  color: $colorblack;
+}
+
+.border {
+  border: 1px solid #e8e8e8;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.border-top {
+  border-top: 1px solid #e8e8e8;
+}
+
+.hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #e8e8e8;
+  width: 100%;
+}
+
+.button-styling {
+  color: $colorwhite;
+  text-align: center;
+  border: 1px solid $colorwhite;
+  border-radius: 5px;
+  background-color: $colorblack;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: $mediumfontsize;
+}
+
+.button-styling:hover {
+  color: $colorblack;
+  background-color: $colorwhite;
+  border: 1px solid $colorblack;
+}
+
+.button-styling-2 {
+  color: $colorblack;
+  text-align: center;
+  border: 1px solid $colorblack;
+  border-radius: 5px;
+  background-color: $colorwhite;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: $mediumfontsize;
+}
+
+.button-styling-2:hover {
+  color: $colorwhite;
+  background-color: $colorblack;
+  border: 1px solid $colorwhite;
+}
