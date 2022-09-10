@@ -7,14 +7,22 @@ $lightbluebgcolor: #f9f9f9;
 //font-size
 $smallfontsize: 14px;
 $mediumfontsize: 16px;
-$largefontsize: 22px;
-$xlargefontsize: 26px;
+$largefontsize: 18px;
+$xlargefontsize: 20px;
+$xxlargefontsize: 24px;
+$xxxlargefontsize: 30px;
+$xxxxlargefontsize: 36px;
 
 .user-profile {
   background-color: $lightbluebgcolor;
   .user-profile-wrap {
     margin-top: -186px;
   }
+}
+
+.user-profile .user-detail {
+  display: flex;
+  justify-content: space-between;
 }
 
 .user-profile .cover-img .cover-img-container {
@@ -24,9 +32,6 @@ $xlargefontsize: 26px;
   overflow: hidden;
 }
 
-.user-profile .user-detail {
-  display: flex;
-}
 .user-profile .user-detail .user-detail-wrap {
   display: flex;
   height: 270px;
@@ -52,10 +57,11 @@ $xlargefontsize: 26px;
     padding: 30px;
     img {
       flex: 1;
+      border-radius: 300px;
     }
   }
   .user-name {
-    font-size: $largefontsize;
+    font-size: $xlargefontsize;
   }
   .title {
     li {
@@ -97,8 +103,25 @@ $xlargefontsize: 26px;
   }
 }
 
-//------
+.user-profile .user-detail .user-social-media-links {
+  display: flex;
+  ul {
+    .facebook-link,
+    .instagram-link {
+      margin-bottom: 12px;
+    }
+  }
+  ul li a {
+    display: flex;
+    padding: 12px;
+  }
+  ul li a svg {
+    height: 20px;
+    width: 20px;
+  }
+}
 
+//----------------------------------------------------------
 
 .user-profile .user-works .user-works-heading {
   font-size: $largefontsize;
@@ -109,7 +132,7 @@ $xlargefontsize: 26px;
 .user-profile .user-works .user-project-wrap {
   display: grid;
   margin-right: -20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .user-profile .user-works .user-project-wrap .user-project {

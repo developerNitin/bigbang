@@ -1,7 +1,12 @@
 import "./styling/product.css";
 
-import Sampleimg from "./styling/sample-product-img.png";
-import SampleProfileImg from "./styling/sample-profile-picture.png";
+import Sampleimg1 from "./assets/sample-img-1.jpg";
+import Sampleimg2 from "./assets/sample-img-2.jpg";
+import Sampleimg3 from "./assets/sample-img-3.jpg";
+import Sampleimg4 from "./assets/sample-img-4.jpg";
+import Sampleimg5 from "./assets/sample-img-5.jpg";
+import Sampleimg6 from "./assets/sample-img-6.jpg";
+
 import Review from "../../subComponents/review/review";
 import { AiFillStar } from "react-icons/ai";
 
@@ -11,7 +16,24 @@ const Product = () => {
       <div className="product-page-wrap">
         <div className="product-img ">
           <div className="product-img-wrap">
-            <img src={Sampleimg} />
+            <div className="product-img-wrap-first-child">
+              <div className="product-img-wrap-first-child-first-child">
+                <img src={Sampleimg1} />
+              </div>
+              <div className="product-img-wrap-first-child-second-child">
+                <img className="product-img-wrap-first-child-second-child-first-child" src={Sampleimg2} />
+                <img src={Sampleimg3} />
+              </div>
+            </div>
+            <div className="product-img-wrap-second-child">
+              <div className="product-img-wrap-second-child-first-child">
+                <img className="product-img-wrap-second-child-first-child-first-child" src={Sampleimg4} />
+                <img src={Sampleimg5} />
+              </div>
+              <div className="product-img-wrap-second-child-second-child">
+                <img src={Sampleimg6} />
+              </div>
+            </div>
           </div>
         </div>
         <div className="product-info">
@@ -51,22 +73,17 @@ const Product = () => {
                 </a>
               </div>
             </div>
-            <div className="product-page-description">
+            {/* <div className="product-page-description">
               <div className=" product-page-description-wrap">
                 <p className="p product-page-description-paragraph">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vivamus imperdiet eros id nisi vulputate porttitor. Curabitur
-                  vitae enim quis turpis condimentum dictum. Nam ullamcorper id
-                  lacus id ornare. Duis lacus nunc, scelerisque id suscipit
-                  quis, finibus vel erat.
-                  <br /> <br />
-                  Vivamus tempor vel augue imperdiet porta. Morbi in nunc eget
-                  augue iaculis egestas. Mauris venenatis nisl sit amet metus
-                  cursus ullamcorper. Quisque sed maximus lacus, eu porttitor
-                  augue.
+                  <span>About project: </span>Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Vivamus imperdiet eros id nisi
+                  vulputate porttitor. Curabitur vitae enim quis turpis
+                  condimentum dictum. Nam ullamcorper id lacus id ornare. Duis
+                  lacus nunc, scelerisque id suscipit quis, finibus vel erat.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="product-owner-detail">
@@ -75,7 +92,7 @@ const Product = () => {
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
               <div className="product-ower-detail-img-nd-heading">
-                <img src={SampleProfileImg} />
+                <img className="img-icon-border" src={Sampleimg5} />
                 <div>
                   <h1 className="h1">Angle Su</h1>
                   <a className="a">-California, USA.</a>

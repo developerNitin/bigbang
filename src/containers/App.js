@@ -8,7 +8,7 @@ import Userprofile from "../components/mainComponents/userprofile/userprofile";
 import Product from "../components/mainComponents/product/product";
 
 //user-data
-import Userdata from "../components/mainComponents/userprofile/userdata/userdata";
+import Userdata from "../components/mainComponents/userprofile/userdata";
 
 function App() {
   return (

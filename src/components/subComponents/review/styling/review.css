@@ -30,6 +30,7 @@
   width: 50px;
   margin-right: 20px;
   margin-bottom: auto;
+  border-radius: 50px;
 }
 
 .review .review-wrap .post-a-comment .post-a-comment-input-field textarea {
@@ -51,7 +52,7 @@
 }
 
 .review .review-wrap .post-a-comment .post-a-comment-button a {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .review .public-review {
@@ -89,5 +90,9 @@
 .review .public-review .public-review-wrap .public-person-name {
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.review .public-review .public-review-wrap .public-person-comment .public-person-comment-display {
+  color: #666666;
 }
 /*# sourceMappingURL=review.css.map */

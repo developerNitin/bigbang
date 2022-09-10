@@ -26,7 +26,7 @@ const Userdata = [
     coverImg: "assets/coverimg/coverImg.jpeg",
     products: [
       { heading: "Bigbang", title: "Creative website", pricing: "200$" },
-      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
+      { heading: "hello", title: "Creative website", pricing: "200$" },
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },

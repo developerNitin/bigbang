@@ -1,7 +1,14 @@
 import "./styling/userprofile.css";
 
-import Sampleimg from "./userdata/sample-profile-picture.png";
-import Sampleimg2 from "./userdata/sample-product-img.png";
+import Sampleimg1 from "./assets/sample-img-5.jpg";
+import Sampleimg2 from "./assets/sample-img-6.jpg";
+
+
+import {
+  AiOutlineFacebook,
+  AiOutlineInstagram,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 function Userprofile(props) {
   return (
@@ -12,11 +19,10 @@ function Userprofile(props) {
         </div>
       </div>
       <div className="page user-profile-wrap">
-      
         <div className="user-detail">
           <div className="border user-detail-wrap">
             <div className="user-img">
-              <img src={Sampleimg} />
+              <img src={Sampleimg1} />
             </div>
             <div className="user-detail-wrap-second-child">
               <div className="user-detail-wrap-second-child-first-child">
@@ -40,6 +46,25 @@ function Userprofile(props) {
             {/* <p className="p description">
             Description: <span>{props.description}</span>
           </p> */}
+          </div>
+          <div className="user-social-media-links">
+            <ul className="ul user-social-media-links-wrap">
+              <li className="facebook-link">
+                <a className="button-styling-2 a">
+                  <AiOutlineFacebook />
+                </a>
+              </li>
+              <li className="instagram-link">
+                <a className="button-styling-2 a">
+                  <AiOutlineInstagram />
+                </a>
+              </li>
+              <li className=" twitter-link">
+                <a className="button-styling-2  a">
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 

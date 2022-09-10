@@ -6,6 +6,15 @@
   margin-top: -186px;
 }
 
+.user-profile .user-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .user-profile .cover-img .cover-img-container {
   height: 266px;
   display: -webkit-box;
@@ -15,12 +24,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-}
-
-.user-profile .user-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .user-profile .user-detail .user-detail-wrap {
@@ -63,10 +66,11 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 300px;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-name {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .user-profile .user-detail .user-detail-wrap .title li {
@@ -114,8 +118,31 @@
   margin-bottom: 20px;
 }
 
+.user-profile .user-detail .user-social-media-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-profile .user-detail .user-social-media-links ul .facebook-link,
+.user-profile .user-detail .user-social-media-links ul .instagram-link {
+  margin-bottom: 12px;
+}
+
+.user-profile .user-detail .user-social-media-links ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+}
+
+.user-profile .user-detail .user-social-media-links ul li a svg {
+  height: 20px;
+  width: 20px;
+}
+
 .user-profile .user-works .user-works-heading {
-  font-size: 22px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +155,8 @@
   display: -ms-grid;
   display: grid;
   margin-right: -20px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
 }
 
 .user-profile .user-works .user-project-wrap .user-project {

@@ -1,4 +1,6 @@
-.main-page .banner .banner-heading, .main-page .banner .banner-text, .main-page .banner .search-form {
+.main-page .banner .banner-heading,
+.main-page .banner .banner-text,
+.main-page .banner .search-form {
   margin-bottom: 30px;
 }
 
@@ -20,9 +22,9 @@
   width: 650px;
 }
 
-.main-page .banner .banner-heading {
+.main-page .banner .banner-heading h1 {
   text-align: center;
-  font-size: 22px;
+  font-size: 36px;
 }
 
 .main-page .banner .banner-text {

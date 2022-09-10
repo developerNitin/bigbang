@@ -1,5 +1,4 @@
-import Sampleimg from "./no-image-230.png";
-import Sampleimg2 from "./sample-profile-picture.png";
+import Sampleimg1 from "./assets/sample-img-5.jpg";
 import "./styling/review.css";
 
 function Review() {
@@ -19,7 +18,7 @@ function Review() {
       <div className="border review-wrap">
         <div className="post-a-comment">
           <div className="post-a-comment-input-field">
-            <img src={Sampleimg} />
+            <img className="img-icon-border" src={Sampleimg1} />
             <textarea className="border" />
           </div>
           <div className="post-a-comment-button">
@@ -32,7 +31,7 @@ function Review() {
             return (
               <div key={idx} className="public-review-wrap">
                 <div className="public-person-img">
-                  <img src={Sampleimg2} />
+                  <img className="img-icon-border" src={Sampleimg1} />
                 </div>
                 <div className="public-person-comment">
                   <h1 className="h1 public-person-name">{i.name}</h1>

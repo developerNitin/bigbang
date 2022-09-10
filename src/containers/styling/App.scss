@@ -7,7 +7,11 @@ $lightbluebgcolor: #f9f9f9;
 //font-size
 $smallfontsize: 14px;
 $mediumfontsize: 16px;
-$largefontsize: 22px;
+$largefontsize: 18px;
+$xlargefontsize: 20px;
+$xxlargefontsize: 24px;
+$xxxlargefontsize: 30px;
+$xxxxlargefontsize: 36px;
 
 // .App div {
 //   border-bottom: 1px solid black;
@@ -19,6 +23,7 @@ $largefontsize: 22px;
   margin-top: 80px;
   padding: 0 100px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
@@ -53,6 +58,22 @@ $largefontsize: 22px;
   border: 1px solid #e8e8e8;
 }
 
+// .img-icon-border {
+//   border: 2px solid $colorblack;
+// }
+
+.border-grey-2px {
+  border: 2px solid $colorgrey;
+}
+
+.border-black {
+  border: 1px solid $colorblack;
+}
+
+.border-black-2px {
+  border: 2px solid $colorblack;
+}
+
 .border-bottom {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -71,7 +92,7 @@ $largefontsize: 22px;
 .button-styling {
   color: $colorwhite;
   text-align: center;
-  border: 1px solid $colorwhite;
+  border: 1px solid $colorblack;
   border-radius: 5px;
   background-color: $colorblack;
   padding: 8px 12px;
@@ -99,5 +120,5 @@ $largefontsize: 22px;
 .button-styling-2:hover {
   color: $colorwhite;
   background-color: $colorblack;
-  border: 1px solid $colorwhite;
+  border: 1px solid $colorblack;
 }
