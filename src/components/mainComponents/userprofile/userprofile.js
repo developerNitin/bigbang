@@ -21,9 +21,6 @@ function Userprofile(props) {
       <div className="page user-profile-wrap">
         <div className="user-detail">
           <div className="border user-detail-wrap">
-            <div className="user-img">
-              <img src={Sampleimg1} />
-            </div>
             <div className="user-detail-wrap-second-child">
               <div className="user-detail-wrap-second-child-first-child">
                 <h1 className="h1 user-name">{props.name}</h1>
@@ -42,6 +39,9 @@ function Userprofile(props) {
                 <a className="a button-styling follow-me">CONTACT ME</a>
                 <a className="a button-styling-2">FOLLOW</a>
               </div>
+            </div>
+            <div className="user-img">
+              <img src={Sampleimg1} />
             </div>
             {/* <p className="p description">
             Description: <span>{props.description}</span>

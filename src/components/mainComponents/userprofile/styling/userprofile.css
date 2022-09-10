@@ -35,6 +35,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
   background-color: #ffffff;
 }
 
@@ -47,7 +49,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 30px;
-  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-detail-wrap-second-child .user-detail-wrap-second-child-first-child {

@@ -37,6 +37,8 @@ $xxxxlargefontsize: 36px;
   height: 270px;
   align-items: center;
   text-align: left;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
   background-color: $colorwhite;
 }
 
@@ -44,7 +46,7 @@ $xxxxlargefontsize: 36px;
   display: flex;
   flex-direction: column;
   padding: 0 30px;
-  padding-left: 0px;
+  padding-right: 0px;
   .user-detail-wrap-second-child-first-child {
     margin-right: 30px;
   }
