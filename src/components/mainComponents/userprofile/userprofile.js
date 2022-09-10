@@ -3,12 +3,7 @@ import "./styling/userprofile.css";
 import Sampleimg1 from "./assets/sample-img-5.jpg";
 import Sampleimg2 from "./assets/sample-img-6.jpg";
 
-
-import {
-  AiOutlineFacebook,
-  AiOutlineInstagram,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 function Userprofile(props) {
   return (
@@ -51,17 +46,17 @@ function Userprofile(props) {
             <ul className="ul user-social-media-links-wrap">
               <li className="facebook-link">
                 <a className="button-styling-2 a">
-                  <AiOutlineFacebook />
+                  <BsFacebook />
                 </a>
               </li>
               <li className="instagram-link">
                 <a className="button-styling-2 a">
-                  <AiOutlineInstagram />
+                  <BsInstagram />
                 </a>
               </li>
               <li className=" twitter-link">
                 <a className="button-styling-2  a">
-                  <AiOutlineTwitter />
+                  <BsTwitter />
                 </a>
               </li>
             </ul>
@@ -69,9 +64,9 @@ function Userprofile(props) {
         </div>
 
         <div className="user-works">
-          <h1 className="h1 user-works-heading">
-            <a className="a button-styling-2">Works</a>
-          </h1>
+          <div className="user-works-heading">
+            <h1 className="border-black h1">Works</h1>
+          </div>
           <div className="user-project-wrap">
             {props.products.map((i, idx) => {
               return (

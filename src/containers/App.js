@@ -10,7 +10,7 @@ import Product from "../components/mainComponents/product/product";
 //user-data
 import Userdata from "../components/mainComponents/userprofile/userdata";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="App">
@@ -44,4 +44,3 @@ function App() {
   );
 }
 
-export default App;

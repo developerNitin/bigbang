@@ -2,10 +2,10 @@
 
 const Userdata = [
   {
-    name: "Anglea Su",
-    url: "AngleaSu",
+    name: "Angela Su",
+    url: "AngelaSu",
     title: "Illustrator",
-    website: "AngleaSu.com",
+    website: "AngelaSu.com",
     since: "2022",
     location: "California, USA",
     description:

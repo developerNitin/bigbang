@@ -8,29 +8,38 @@ import Sampleimg5 from "./assets/sample-img-5.jpg";
 import Sampleimg6 from "./assets/sample-img-6.jpg";
 
 import Review from "../../subComponents/review/review";
+
 import { AiFillStar } from "react-icons/ai";
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Product = () => {
   return (
     <div className="page product-page">
       <div className="product-page-wrap">
-        <div className="product-img ">
-          <div className="product-img-wrap">
-            <div className="product-img-wrap-first-child">
-              <div className="product-img-wrap-first-child-first-child">
-                <img src={Sampleimg1} />
+        <div className="product-images">
+          <div className="product-images-wrap">
+            <div className="product-images-wrap-first-child">
+              <div className="product-images-wrap-first-child-first-child">
+                <img src={Sampleimg2} />
               </div>
-              <div className="product-img-wrap-first-child-second-child">
-                <img className="product-img-wrap-first-child-second-child-first-child" src={Sampleimg2} />
+              <div className="product-images-wrap-first-child-second-child">
+                <img
+                  className="product-images-wrap-first-child-second-child-first-child"
+                  src={Sampleimg1}
+                />
                 <img src={Sampleimg3} />
               </div>
             </div>
-            <div className="product-img-wrap-second-child">
-              <div className="product-img-wrap-second-child-first-child">
-                <img className="product-img-wrap-second-child-first-child-first-child" src={Sampleimg4} />
+            <div className="product-images-wrap-second-child">
+              <div className="product-images-wrap-second-child-first-child">
+                <img
+                  className="product-images-wrap-second-child-first-child-first-child"
+                  src={Sampleimg4}
+                />
                 <img src={Sampleimg5} />
               </div>
-              <div className="product-img-wrap-second-child-second-child">
+              <div className="product-images-wrap-second-child-second-child">
                 <img src={Sampleimg6} />
               </div>
             </div>
@@ -73,8 +82,9 @@ const Product = () => {
                 </a>
               </div>
             </div>
+
             {/* <div className="product-page-description">
-              <div className=" product-page-description-wrap">
+              <div className="product-page-description-wrap">
                 <p className="p product-page-description-paragraph">
                   <span>About project: </span>Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit. Vivamus imperdiet eros id nisi
@@ -86,6 +96,53 @@ const Product = () => {
             </div> */}
           </div>
         </div>
+
+        <div className="suggested-project">
+          <div className="suggested-project-scroll-icons-1">
+            <button className="a button-styling-2 suggested-project-scroll-icons-1-button">
+              <MdKeyboardArrowLeft />
+            </button>
+          </div>
+
+          <div className="suggested-project-wrap">
+            <div className="suggested-project-img-wrap">
+              <a className="a">
+                <img src={Sampleimg1} />
+              </a>
+            </div>
+            <div className="suggested-project-img-wrap">
+              <a className="a">
+                <img src={Sampleimg2} />
+              </a>
+            </div>
+            <div className="suggested-project-img-wrap">
+              <a className="a">
+                <img src={Sampleimg3} />
+              </a>
+            </div>
+            <div className="suggested-project-img-wrap">
+              <a className="a">
+                <img src={Sampleimg4} />
+              </a>
+            </div>
+            <div className="suggested-project-img-wrap">
+              <a children="a">
+                <img src={Sampleimg5} />
+              </a>
+            </div>
+            <div className="suggested-project-img-wrap">
+              <a>
+                <img src={Sampleimg6} />
+              </a>
+            </div>
+          </div>
+
+          <div className="suggested-project-scroll-icons-2">
+            <button className="a button-styling-2 suggested-project-scroll-icons-2-button">
+              <MdKeyboardArrowRight />
+            </button>
+          </div>
+        </div>
         <div className="product-owner-detail">
           <Review />
           <div className=" product-owner-detail-wrap">
@@ -94,7 +151,7 @@ const Product = () => {
               <div className="product-ower-detail-img-nd-heading">
                 <img className="img-icon-border" src={Sampleimg5} />
                 <div>
-                  <h1 className="h1">Angle Su</h1>
+                  <h1 className="h1">Angela Su</h1>
                   <a className="a">-California, USA.</a>
                 </div>
               </div>

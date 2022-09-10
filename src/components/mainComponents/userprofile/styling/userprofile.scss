@@ -115,7 +115,8 @@ $xxxxlargefontsize: 36px;
   }
   ul li a {
     display: flex;
-    padding: 12px;
+    padding: 13px;
+    border-radius: 30px;
   }
   ul li a svg {
     height: 20px;
@@ -126,9 +127,17 @@ $xxxxlargefontsize: 36px;
 //----------------------------------------------------------
 
 .user-profile .user-works .user-works-heading {
-  font-size: $largefontsize;
   display: flex;
   justify-content: flex-end;
+  margin-left: auto;
+  h1 {
+    font-size: $xlargefontsize;
+    color: $colorblack;
+    position: relative;
+    margin-left: auto;
+    padding: 8px 12px;
+    border-radius: 30px;
+  }
 }
 
 .user-profile .user-works .user-project-wrap {

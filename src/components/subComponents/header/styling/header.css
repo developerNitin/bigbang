@@ -1,14 +1,14 @@
-body {
+.header {
   background-color: #f9f9f9;
 }
 
-.App-header {
+.header {
   position: fixed;
   width: 100vw;
   top: 0px;
 }
 
-.App-header .navbar {
+.header .navbar {
   height: 80px;
   font-size: 16px;
   display: -webkit-box;
@@ -23,28 +23,28 @@ body {
   padding: 0 40px;
 }
 
-.App-header .nav-link-left ul {
+.header .nav-link-left ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.App-header .nav-link-left ul .navbar-logo {
+.header .nav-link-left ul .navbar-logo {
   margin-right: 12px;
   padding: 0 10px;
 }
 
-.App-header .nav-link-left ul li {
+.header .nav-link-left ul li {
   padding: 0 10px;
 }
 
-.App-header .nav-link-right ul {
+.header .nav-link-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.App-header .nav-link-right ul li {
+.header .nav-link-right ul li {
   padding: 0 10px;
 }
 /*# sourceMappingURL=header.css.map */

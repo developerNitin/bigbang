@@ -1,8 +1,8 @@
 import "./styling/header.css";
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="App-header">
+    <header className="header">
       <div className="navbar">
         <div className="nav-link-left">
           <ul className="ul">
@@ -10,10 +10,10 @@ const Header = () => {
               <a href="/" className="a">BigBang</a>
             </li>
             <li>
-              <a className="a">Categories</a>
+              <a href="/angelasu" className="a">Userprofile</a>
             </li>
             <li>
-              <a className="a">Services</a>
+              <a href="/product" className="a">Product</a>
             </li>
             <li>
               <a className="a">Explore</a>
@@ -38,4 +38,3 @@ const Header = () => {
   );
 };
 
-export default Header;

@@ -17,6 +17,10 @@ $xxxxlargefontsize: 36px;
 //   border-bottom: 1px solid black;
 // }
 
+body {
+ background-color: $lightbluebgcolor;
+}
+
 .page {
   max-width: 2186px;
   margin: 0 auto;
