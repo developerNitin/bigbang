@@ -14,14 +14,12 @@ $xxxlargefontsize: 30px;
 $xxxxlargefontsize: 36px;
 
 .header {
-  background-color: $lightbluebgcolor;
-}
-
-.header {
   position: fixed;
   width: 100vw;
   top: 0px;
+  background-color: $lightbluebgcolor;
 }
+
 .header .navbar {
   height: 80px;
   // background-color: $colorwhite;

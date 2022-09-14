@@ -144,7 +144,6 @@ const Product = () => {
           </div>
         </div>
         <div className="product-owner-detail">
-          <Review />
           <div className=" product-owner-detail-wrap">
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
@@ -169,6 +168,7 @@ const Product = () => {
               <p className="p">Published: 9 sept 2022</p>
             </div>
           </div>
+          <Review />
         </div>
       </div>
     </div>

@@ -1,11 +1,8 @@
 .header {
-  background-color: #f9f9f9;
-}
-
-.header {
   position: fixed;
   width: 100vw;
   top: 0px;
+  background-color: #f9f9f9;
 }
 
 .header .navbar {

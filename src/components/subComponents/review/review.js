@@ -34,19 +34,23 @@ function Review() {
         <div className="public-review">
           {reivews.map((i, idx) => {
             return (
-              <div key={idx} className="public-review-wrap">
-                <div className="public-person-img">
-                  <img className="img-icon-border" src={Sampleimg1} />
+              <div className="public-review-wrap">
+                <div className="public-review-wrap-first-child">
+                  <div className="public-person-img">
+                    <img className="img-icon-border" src={Sampleimg1} />
+                  </div>
+                  <div className="public-person-comment">
+                    <h1 className="h1 public-person-name">{i.name}</h1>
+                    <p className="p public-person-comment-display">
+                      {i.comment}
+                    </p>
+                  </div>
                 </div>
-                <div className="public-person-comment">
-                  <h1 className="h1 public-person-name">{i.name}</h1>
-                  <p className="p public-person-comment-display">{i.comment}</p>
-                </div>
+                <hr className="hr" />
               </div>
             );
           })}
         </div>
-        <div></div>
       </div>
     </div>
   );
