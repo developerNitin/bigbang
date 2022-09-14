@@ -199,6 +199,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  z-index: 0;
 }
 
 .product-page .product-page-wrap .suggested-project .suggested-project-wrap {

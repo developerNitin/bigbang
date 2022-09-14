@@ -138,6 +138,7 @@ $imagesSpacing: 5px;
   display: flex;
   align-items: center;
   overflow: hidden;
+  z-index: 0;
 }
 
 .product-page .product-page-wrap .suggested-project .suggested-project-wrap {

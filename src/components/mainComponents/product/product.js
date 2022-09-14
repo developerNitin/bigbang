@@ -49,7 +49,7 @@ const Product = () => {
           <div className="product-info-wrap">
             <div className="product-info-wrap-first-child">
               <div className="product-page-cart-links">
-                <a className="a button-styling product-page-cart-links-wrap">
+                <a className="button-styling product-page-cart-links-wrap">
                   ADD TO CART
                 </a>
               </div>
@@ -99,7 +99,7 @@ const Product = () => {
 
         <div className="suggested-project">
           <div className="suggested-project-scroll-icons-1">
-            <button className="a button-styling-2 suggested-project-scroll-icons-1-button">
+            <button className="button-styling-2 suggested-project-scroll-icons-1-button">
               <MdKeyboardArrowLeft />
             </button>
           </div>
@@ -138,13 +138,13 @@ const Product = () => {
           </div>
 
           <div className="suggested-project-scroll-icons-2">
-            <button className="a button-styling-2 suggested-project-scroll-icons-2-button">
+            <button className="button-styling-2 suggested-project-scroll-icons-2-button">
               <MdKeyboardArrowRight />
             </button>
           </div>
         </div>
         <div className="product-owner-detail">
-          <div className=" product-owner-detail-wrap">
+          <div className="product-owner-detail-wrap">
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
               <div className="product-ower-detail-img-nd-heading">
@@ -155,10 +155,10 @@ const Product = () => {
                 </div>
               </div>
               <div className="product-owner-detail-button-wrap">
-                <a className="a button-styling product-owner-detail-button-hire-me">
+                <a className="button-styling product-owner-detail-button-hire-me">
                   HIRE ME
                 </a>
-                <a className="a button-styling-2 product-owner-detail-button-follow">
+                <a className="button-styling-2 product-owner-detail-button-follow">
                   FOLLOW
                 </a>
               </div>

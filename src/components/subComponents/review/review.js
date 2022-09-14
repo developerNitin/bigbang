@@ -27,7 +27,7 @@ function Review() {
             <textarea className="border" />
           </div>
           <div className="post-a-comment-button">
-            <a className="a button-styling">POST A COMMENT</a>
+            <a className="button-styling">POST A COMMENT</a>
           </div>
         </div>
         <hr className="hr" />

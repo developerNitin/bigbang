@@ -31,8 +31,8 @@ function Userprofile(props) {
                 </p>
               </div>
               <div className="user-detail-links">
-                <a className="a button-styling follow-me">CONTACT ME</a>
-                <a className="a button-styling-2">FOLLOW</a>
+                <a className="button-styling follow-me">CONTACT ME</a>
+                <a className="button-styling-2">FOLLOW</a>
               </div>
             </div>
             <div className="user-img">
