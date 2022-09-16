@@ -3,7 +3,7 @@
 }
 
 .user-profile .user-profile-wrap {
-  margin-top: -186px;
+  margin-top: -136px;
 }
 
 .user-profile .user-detail {
@@ -193,12 +193,21 @@
 }
 
 .user-profile .user-works .user-project-wrap .user-project .user-project-detail {
-  padding: 20px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .user-profile .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading,
 .user-profile .user-works .user-project-wrap .user-project .user-project-detail .user-project-title {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
 }
 

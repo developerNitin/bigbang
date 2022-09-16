@@ -1,4 +1,4 @@
-import "./styling/App.css";
+import "./styling/Global.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "../components/subComponents/header/header";
 

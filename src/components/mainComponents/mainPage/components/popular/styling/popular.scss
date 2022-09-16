@@ -1,0 +1,108 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 14px;
+$mediumfontsize: 16px;
+$largefontsize: 18px;
+$xlargefontsize: 20px;
+$xxlargefontsize: 24px;
+$xxxlargefontsize: 30px;
+$xxxxlargefontsize: 36px;
+
+.popular {
+  background-color: $colorwhite;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.popular .popular-wrap {
+  display: flex;
+}
+
+.popular .popular-wrap .popular-wrap-first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: $xxxxlargefontsize;
+    margin-bottom: 50px;
+  }
+  h3 {
+    font-size: $xlargefontsize;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 5px;
+      display: flex;
+    }
+  }
+  p {
+    margin-right: 20%;
+    margin-bottom: 20px;
+    border-left: 3px solid $colorblack;
+    padding-left: 20px;
+  }
+}
+
+//........
+
+.popular .popular-wrap .popular-wrap-second-child {
+  display: flex;
+  flex: 1;
+  img {
+    transition: all ease .3s;
+  }
+  .popular-wrap-second-child-first-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    img:hover {
+      width: 105%;
+      height: 105%;
+    }
+  }
+
+  .popular-wrap-second-child-second-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .popular-wrap-second-child-second-child-first-child,
+    .popular-wrap-second-child-second-child-second-child {
+      flex: 1;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      img {
+        margin-top: -12%;
+        margin-bottom: -12%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      img:hover {
+        scale: 105%;
+      }
+    }
+
+    .popular-wrap-second-child-second-child-first-child {
+      margin-bottom: 20px;
+    }
+  }
+}

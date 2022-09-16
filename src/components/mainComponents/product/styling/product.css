@@ -1,6 +1,7 @@
 .product-page {
   display: block;
   background-color: #191919;
+  padding-top: 130px;
 }
 
 .product-page .product-page-wrap {
@@ -175,7 +176,6 @@
 
 .product-page .product-page-wrap .product-info .product-info-wrap .product-page-cart-links .product-page-cart-links-wrap {
   border-color: #ffffff;
-  border-radius: 30px;
 }
 
 .product-page .product-page-wrap .product-info .product-info-wrap .product-page-description {
@@ -226,7 +226,6 @@
 
 .product-page .product-page-wrap .suggested-project .suggested-project-wrap .suggested-project-img-wrap {
   display: inline-block;
-  float: none;
   width: calc(33.3% - 6.36px);
   overflow-y: hidden;
   margin-right: 10px;

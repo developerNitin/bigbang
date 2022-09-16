@@ -21,6 +21,7 @@ $imagesSpacing: 5px;
 .product-page {
   display: block;
   background-color: $colordarkgrey;
+  padding-top: 130px;
 }
 
 .product-page .product-page-wrap {
@@ -118,7 +119,6 @@ $imagesSpacing: 5px;
     margin-bottom: 20px;
     .product-page-cart-links-wrap {
       border-color: $colorwhite;
-      border-radius: 30px;
     }
   }
 
@@ -160,7 +160,7 @@ $imagesSpacing: 5px;
   }
   .suggested-project-img-wrap {
     display: inline-block;
-    float: none;
+    // float: none;
     width: calc(33.3% - 6.36px);
     overflow-y: hidden;
     margin-right: 10px;

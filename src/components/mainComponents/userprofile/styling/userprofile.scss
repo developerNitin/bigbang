@@ -16,7 +16,7 @@ $xxxxlargefontsize: 36px;
 .user-profile {
   background-color: $lightbluebgcolor;
   .user-profile-wrap {
-    margin-top: -186px;
+    margin-top: -136px;
   }
 }
 
@@ -159,10 +159,13 @@ $xxxxlargefontsize: 36px;
     font-size: $mediumfontsize;
   }
   .user-project-detail {
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     .user-project-heading,
     .user-project-title {
-      margin-bottom: 5px;
+    margin-bottom: 8px;
       font-size: $smallfontsize;
     }
     .user-project-heading {

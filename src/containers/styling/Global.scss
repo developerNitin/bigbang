@@ -24,15 +24,12 @@ body {
 .page {
   max-width: 2186px;
   margin: 0 auto;
-  margin-top: 80px;
   padding: 0 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 @media (max-width: 1200px) {
   .page {
-    padding: 50px;
+    padding: 0 50px;
   }
 }
 //
@@ -127,3 +124,7 @@ body {
 //   background-color: $colorblack;
 //   border: 1px solid $colorblack;
 // }
+
+.line-height-24px {
+line-height: 24px;
+}
