@@ -1,7 +1,7 @@
 .product-page {
   display: block;
   padding-top: 130px;
-  background-color: #191919;
+  background-color: #f9f9f9;
 }
 
 .product-page .product-page-wrap {
@@ -73,6 +73,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 5px;
 }
 
 .product-page .product-page-wrap .product-images .product-images-wrap .product-images-wrap-second-child .product-images-wrap-second-child-first-child {
@@ -227,7 +228,7 @@
 .product-page .product-page-wrap .suggested-project .suggested-project-wrap .suggested-project-img-wrap {
   display: inline-block;
   width: calc(33.3% - 6.36px);
-  overflow-y: hidden;
+  overflow: hidden;
   margin-right: 10px;
   border-radius: 3px;
   vertical-align: bottom;
@@ -256,6 +257,7 @@
   margin-top: -20px;
   margin-left: -20px;
   border: 0;
+  z-index: 3;
 }
 
 .product-page .product-page-wrap .suggested-project .suggested-project-scroll-icons-1 button svg,
@@ -278,7 +280,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px;
+  padding: 70px 50px;
+  padding-bottom: 0;
   background-color: #f9f9f9;
   margin-bottom: 50px;
 }
@@ -292,7 +295,7 @@
 
 .product-page .product-page-wrap .product-owner-detail .product-owner-detail-wrap {
   margin-bottom: auto;
-  margin-right: 20px;
+  margin-left: 20px;
   width: 360px;
 }
 

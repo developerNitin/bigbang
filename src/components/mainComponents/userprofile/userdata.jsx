@@ -37,10 +37,6 @@ const Userdata = [
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },
       { heading: "Bigboss", title: "Creative website", pricing: "200$" },
-      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
-      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
-      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
-      { heading: "Bigboss", title: "Creative website", pricing: "200$" },
     ],
   },
 ];

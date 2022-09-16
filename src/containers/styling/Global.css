@@ -31,6 +31,15 @@
   color: #010101;
 }
 
+.image-ani {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.image-ani:hover {
+  scale: 105%;
+}
+
 .border {
   border: 1px solid #e8e8e8;
 }

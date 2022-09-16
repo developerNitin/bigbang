@@ -107,32 +107,32 @@ const Product = () => {
           <div className="suggested-project-wrap">
             <div className="suggested-project-img-wrap">
               <a className="a">
-                <img src={Sampleimg1} />
+                <img className="image-ani" src={Sampleimg1} />
               </a>
             </div>
             <div className="suggested-project-img-wrap">
               <a className="a">
-                <img src={Sampleimg2} />
+                <img className="image-ani" src={Sampleimg2} />
               </a>
             </div>
             <div className="suggested-project-img-wrap">
               <a className="a">
-                <img src={Sampleimg3} />
+                <img className="image-ani" src={Sampleimg3} />
               </a>
             </div>
             <div className="suggested-project-img-wrap">
               <a className="a">
-                <img src={Sampleimg4} />
+                <img className="image-ani" src={Sampleimg4} />
               </a>
             </div>
             <div className="suggested-project-img-wrap">
               <a children="a">
-                <img src={Sampleimg5} />
+                <img className="image-ani" src={Sampleimg5} />
               </a>
             </div>
             <div className="suggested-project-img-wrap">
-              <a>
-                <img src={Sampleimg6} />
+              <a className="a">
+                <img className="image-ani" src={Sampleimg6} />
               </a>
             </div>
           </div>
@@ -144,6 +144,7 @@ const Product = () => {
           </div>
         </div>
         <div className="product-owner-detail">
+          <Review />
           <div className="product-owner-detail-wrap">
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
@@ -155,12 +156,12 @@ const Product = () => {
                 </div>
               </div>
               <div className="product-owner-detail-button-wrap">
-                <a className="button-styling product-owner-detail-button-hire-me">
+                <a className="button-styling-2 product-owner-detail-button-hire-me">
                   HIRE ME
                 </a>
-                <a className="button-styling-2 product-owner-detail-button-follow">
+                {/* <a className="button-styling-2 product-owner-detail-button-follow">
                   FOLLOW
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="border product-owner-detail-wrap-second-child">
@@ -168,7 +169,6 @@ const Product = () => {
               <p className="p">Published: 9 sept 2022</p>
             </div>
           </div>
-          <Review />
         </div>
       </div>
     </div>

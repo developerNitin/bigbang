@@ -21,7 +21,7 @@ $imagesSpacing: 5px;
 .product-page {
   display: block;
   padding-top: 130px;
-  background-color: $colordarkgrey;
+  background-color: $lightbluebgcolor;
 }
 
 .product-page .product-page-wrap {
@@ -58,6 +58,7 @@ $imagesSpacing: 5px;
   .product-images-wrap-second-child {
     display: flex;
     flex: 1;
+    margin-bottom: $imagesSpacing;
     .product-images-wrap-second-child-first-child {
       flex: 1;
       display: flex;
@@ -162,7 +163,7 @@ $imagesSpacing: 5px;
     display: inline-block;
     // float: none;
     width: calc(33.3% - 6.36px);
-    overflow-y: hidden;
+    overflow: hidden;
     margin-right: 10px;
     border-radius: 3px;
     vertical-align: bottom;
@@ -188,6 +189,7 @@ $imagesSpacing: 5px;
       margin-top: -20px;
       margin-left: -20px;
       border: 0;
+      z-index: 3;
       svg {
         height: 25px;
         width: 25px;
@@ -213,7 +215,8 @@ $imagesSpacing: 5px;
 
 .product-page .product-page-wrap .product-owner-detail {
   display: flex;
-  padding: 100px;
+  padding: 70px 50px;
+  padding-bottom: 0;
   background-color: $lightbluebgcolor;
   margin-bottom: 50px;
   .product-owner-detail-owner-label {
@@ -225,7 +228,7 @@ $imagesSpacing: 5px;
 
   .product-owner-detail-wrap {
     margin-bottom: auto;
-    margin-right: 20px;
+    margin-left: 20px;
     width: 360px;
   }
 

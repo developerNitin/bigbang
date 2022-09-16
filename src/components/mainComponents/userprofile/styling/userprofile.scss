@@ -16,7 +16,7 @@ $xxxxlargefontsize: 36px;
 .user-profile {
   background-color: $lightbluebgcolor;
   .user-profile-wrap {
-    margin-top: -136px;
+    padding-top: 130px;
   }
 }
 
@@ -26,7 +26,6 @@ $xxxxlargefontsize: 36px;
 }
 
 .user-profile .cover-img .cover-img-container {
-  height: 266px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -34,50 +33,42 @@ $xxxxlargefontsize: 36px;
 
 .user-profile .user-detail .user-detail-wrap {
   display: flex;
-  height: 270px;
-  align-items: center;
   text-align: left;
+  flex-direction: column;
   // border-top-right-radius: 300px;
   // border-bottom-right-radius: 300px;
-  background-color: $colorwhite;
+  // background-color: $colorwhite;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-detail-wrap-second-child {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
-  padding-right: 0px;
-  .user-detail-wrap-second-child-first-child {
-    margin-right: 30px;
-  }
 }
 
 .user-profile .user-detail .user-detail-wrap {
-  .user-img {
-    display: flex;
-    height: 210px;
-    width: 210px;
-    padding: 30px;
-    img {
-      flex: 1;
-      // border-radius: 300px;
-    }
+  border-radius: 5px;
+  flex: 1;
+  h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
   }
   .user-name {
-    font-size: $xlargefontsize;
+    font-size: 56px;
+    margin-bottom: 24px;
   }
-  .title {
-    li {
-      font-size: $mediumfontsize;
+  .user-img {
+    margin-bottom: 24px;
+    img {
+      flex: 1;
+      height: 80px;
+      width: 80px;
+      border-radius: 100px;
     }
   }
   .user-detail-links {
     display: flex;
-    width: 320px;
     a {
       font-size: $mediumfontsize;
-      display: block;
-      flex: 1;
     }
     .follow-me {
       margin-right: 10px;
@@ -94,31 +85,28 @@ $xxxxlargefontsize: 36px;
 }
 
 .user-profile .user-detail {
-  .user-name,
-  .title,
-  .location,
   .contact-me,
   .description {
     margin-bottom: 10px;
-  }
-  .location {
-    margin-bottom: 20px;
   }
 }
 
 .user-profile .user-detail .user-social-media-links {
   display: flex;
+  margin-bottom: auto;
+  margin-top: 5px;
   ul {
-  display: flex;
-
+    display: flex;
+  flex-direction: column;
     .facebook-link,
     .instagram-link {
-      margin-right: 15px;
+      margin-bottom: 15px;
     }
   }
   ul li a {
     display: flex;
     padding: 13px;
+    background-color: transparent;
   }
   ul li a svg {
     height: 20px;
@@ -130,19 +118,27 @@ $xxxxlargefontsize: 36px;
 
 .user-profile .user-works {
   padding-top: 50px;
+  hr {
+    margin-bottom: 30px;
+  }
 }
 
 .user-profile .user-works .user-works-heading {
   h1 {
-    font-size: $xxlargefontsize;
+    font-size: $xlargefontsize;
     color: $colorblack;
-    text-align: right;
+    text-align: left;
+    span {
+      color: $colorgrey;
+      margin-left: 10px;
+      font-size: $largefontsize;
+    }
   }
 }
 
 .user-profile .user-works .user-project-wrap {
   display: grid;
-  margin-right: -20px;
+  margin-right: -30px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -150,35 +146,44 @@ $xxxxlargefontsize: 36px;
   display: flex;
   background-color: white;
   flex-direction: column;
-  margin-right: 20px;
-  img {
-    width: 100%;
+  margin-right: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  .user-project-image-wrap {
+    overflow: hidden;
+    img {
+      width: 100%;
+      margin-top: -10%;
+      margin-bottom: -10%;
+    }
   }
   h1 {
     font-size: $mediumfontsize;
   }
-  .user-project-detail {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .user-project-heading,
-    .user-project-title {
-      margin-bottom: 8px;
-      font-size: $smallfontsize;
-    }
-    .user-project-heading {
-      font-size: $mediumfontsize;
-    }
-  }
-  .user-project-pricing {
-    display: flex;
-    justify-content: space-between;
-    font-size: $smallfontsize;
-  }
+  // .user-project-detail {
+  //   padding: 15px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //   background-color: $colorwhite;
+  //   .user-project-heading,
+  //   p {
+  //     margin-bottom: 5px;
+  //     font-size: $smallfontsize;
+  //   }
+  //   .user-project-heading {
+  //     font-size: $mediumfontsize;
+  //   }
+  // }
+  // .user-project-pricing {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   font-size: $smallfontsize;
+  // }
 }
 
 .user-profile .user-works .user-works-heading,
 .user-profile .user-works .user-project-wrap .user-project {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }

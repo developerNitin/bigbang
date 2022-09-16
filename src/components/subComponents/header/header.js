@@ -2,7 +2,7 @@ import "./styling/header.css";
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="border header">
       <div className="navbar">
         <div className="nav-link-left">
           <ul className="ul">
