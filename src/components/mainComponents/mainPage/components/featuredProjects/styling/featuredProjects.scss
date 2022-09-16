@@ -1,0 +1,73 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 14px;
+$mediumfontsize: 16px;
+$largefontsize: 18px;
+$xlargefontsize: 20px;
+$xxlargefontsize: 24px;
+$xxxlargefontsize: 30px;
+$xxxxlargefontsize: 36px;
+
+.featured-projects {
+  background-color: $colorwhite;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.featured-projects .user-works .user-works-heading {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: $xxxxlargefontsize;
+    color: $colorblack;
+    margin-bottom: 50px;
+  }
+  a {
+    margin-bottom: auto;
+    margin-top: 3px;
+  }
+}
+
+.featured-projects .user-works .user-project-wrap {
+  display: grid;
+  margin-right: -20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.featured-projects .user-works .user-project-wrap .user-project {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  margin-right: 20px;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: $mediumfontsize;
+  }
+  .user-project-detail {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .user-project-heading,
+    .user-project-title {
+      margin-bottom: 8px;
+      font-size: $smallfontsize;
+    }
+    .user-project-heading {
+      font-size: $mediumfontsize;
+    }
+  }
+  .user-project-pricing {
+    display: flex;
+    justify-content: space-between;
+    font-size: $smallfontsize;
+  }
+}

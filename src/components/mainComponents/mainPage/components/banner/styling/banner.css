@@ -32,7 +32,7 @@
 
 .main-page .banner .banner-wrap .banner-image img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .main-page .banner .banner-wrap .banner-wrap-first-child {
@@ -58,11 +58,6 @@
   text-align: left;
   width: 80%;
   font-size: 16px;
-}
-
-.main-page .banner .banner-wrap-first-child .banner-text p {
-  border-left: 3px solid #010101;
-  padding-left: 20px;
 }
 
 .main-page .banner .banner-wrap-first-child .search-form form {

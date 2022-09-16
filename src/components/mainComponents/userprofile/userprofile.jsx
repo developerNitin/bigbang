@@ -65,7 +65,7 @@ function Userprofile(props) {
 
         <div className="user-works">
           <div className="user-works-heading">
-            <h1 className="border-black h1">Works</h1>
+            <h1 className="h1">PROJECTS</h1>
           </div>
           <div className="user-project-wrap">
             {props.products.map((i, idx) => {

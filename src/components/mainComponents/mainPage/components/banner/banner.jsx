@@ -1,7 +1,9 @@
 import "./styling/banner.css";
 
 import { GoSearch } from "react-icons/go";
-import image from "./assets/sample-img-5.jpg";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+
+import image from "../assets/sample-img-5.jpg";
 
 const Banner = () => {
   return (
@@ -19,6 +21,7 @@ const Banner = () => {
             </h1>
           </div>
           <div className="banner-text">
+            {/* <span><MdOutlineDoubleArrow /></span> */}
             <p className="line-height-24px p">
               Millions of talents and agencies around the world showcase their
               work on Bigbang.

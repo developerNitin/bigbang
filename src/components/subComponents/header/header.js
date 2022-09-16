@@ -29,7 +29,7 @@ export default function Header() {
               <a className="a">Log in</a>
             </li>
             <li>
-              <a className="a button-styling nav-join-now">Join Now</a>
+              <a className="button-styling nav-join-now">Join Now</a>
             </li>
           </ul>
         </div>

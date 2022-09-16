@@ -1,0 +1,87 @@
+.featured-projects {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.featured-projects .user-works .user-works-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured-projects .user-works .user-works-heading h1 {
+  font-size: 36px;
+  color: #010101;
+  margin-bottom: 50px;
+}
+
+.featured-projects .user-works .user-works-heading a {
+  margin-bottom: auto;
+  margin-top: 3px;
+}
+
+.featured-projects .user-works .user-project-wrap {
+  display: -ms-grid;
+  display: grid;
+  margin-right: -20px;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.featured-projects .user-works .user-project-wrap .user-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project img {
+  width: 100%;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project h1 {
+  font-size: 16px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading,
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-title {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading {
+  font-size: 16px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+/*# sourceMappingURL=featuredProjects.css.map */

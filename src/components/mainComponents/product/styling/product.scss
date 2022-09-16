@@ -20,8 +20,8 @@ $imagesSpacing: 5px;
 
 .product-page {
   display: block;
-  background-color: $colordarkgrey;
   padding-top: 130px;
+  background-color: $colordarkgrey;
 }
 
 .product-page .product-page-wrap {
@@ -215,6 +215,7 @@ $imagesSpacing: 5px;
   display: flex;
   padding: 100px;
   background-color: $lightbluebgcolor;
+  margin-bottom: 50px;
   .product-owner-detail-owner-label {
     display: block;
     margin-bottom: 10px;

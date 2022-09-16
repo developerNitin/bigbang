@@ -1,0 +1,150 @@
+.featured-profiles {
+  padding-top: 90px;
+  background-color: #ffffff;
+}
+
+.featured-profiles .featured-profiles-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.featured-profiles .featured-profiles-heading h1 {
+  font-size: 36px;
+}
+
+.featured-profiles .featured-profiles-heading a {
+  margin-bottom: auto;
+  margin-top: 3px;
+}
+
+.featured-profiles .suggested-profiles {
+  padding: 50px 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap a {
+  display: block;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-img-wrap img {
+  width: 100%;
+  margin-top: -8%;
+  margin-bottom: -8%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data {
+  display: inline-block;
+  width: calc(25% - 17px);
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data :hover .suggested-profiles-img-wrap img {
+  scale: 105%;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-img-wrap {
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-wrap :last-child {
+  margin-right: 0;
+}
+
+.featured-profiles
+.suggested-profiles
+.suggested-profiles-wrap
+.suggested-profiles-user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.featured-profiles
+.suggested-profiles
+.suggested-profiles-wrap
+.suggested-profiles-user-profile .suggested-profiles-user-profile-image {
+  margin-right: 15px;
+}
+
+.featured-profiles
+.suggested-profiles
+.suggested-profiles-wrap
+.suggested-profiles-user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.featured-profiles
+.suggested-profiles
+.suggested-profiles-wrap
+.suggested-profiles-user-profile h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.featured-profiles
+.suggested-profiles
+.suggested-profiles-wrap
+.suggested-profiles-user-profile p {
+  font-size: 16px;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-scroll-icons-1 button,
+.featured-profiles .suggested-profiles .suggested-profiles-scroll-icons-2 button {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  margin-top: -22.5px;
+  margin-left: -22.5px;
+  z-index: 3;
+}
+
+.featured-profiles .suggested-profiles .suggested-profiles-scroll-icons-1 button svg,
+.featured-profiles .suggested-profiles .suggested-profiles-scroll-icons-2 button svg {
+  height: 25px;
+  width: 25px;
+}
+/*# sourceMappingURL=featuredProfiles.css.map */

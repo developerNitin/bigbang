@@ -1,7 +1,7 @@
 .product-page {
   display: block;
-  background-color: #191919;
   padding-top: 130px;
+  background-color: #191919;
 }
 
 .product-page .product-page-wrap {
@@ -280,6 +280,7 @@
   display: flex;
   padding: 100px;
   background-color: #f9f9f9;
+  margin-bottom: 50px;
 }
 
 .product-page .product-page-wrap .product-owner-detail .product-owner-detail-owner-label {
