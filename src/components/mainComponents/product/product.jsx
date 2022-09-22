@@ -14,10 +14,18 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Product = () => {
+  const images = [
+    Sampleimg1,
+    Sampleimg2,
+    Sampleimg3,
+    Sampleimg4,
+    Sampleimg5,
+    Sampleimg6,
+  ];
   return (
     <div className="page product-page">
       <div className="product-page-wrap">
-        <div className="product-images">
+        {/* <div className="product-images">
           <div className="product-images-wrap">
             <div className="product-images-wrap-first-child">
               <div className="product-images-wrap-first-child-first-child">
@@ -43,6 +51,24 @@ const Product = () => {
                 <img src={Sampleimg6} />
               </div>
             </div>
+          </div>
+        </div> */}
+        <div className="product-page-images">
+          <div className="product-page-images-wrap">
+            <div>
+              {images.map((i, idx) => {
+                return <img key={idx} src={i} />;
+              })}
+            </div>
+          </div>
+          <div className="product-page-images-change-bar">
+            {images.map((i, idx) => {
+              return (
+                <div>
+                  <img key={idx} src={i} />
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="product-info">
