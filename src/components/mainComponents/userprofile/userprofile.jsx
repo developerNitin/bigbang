@@ -36,17 +36,17 @@ function Userprofile(props) {
           <div className="user-social-media-links">
             <ul className="ul user-social-media-links-wrap">
               <li className="facebook-link">
-                <a className="button-styling-2 a">
+                <a className=" a">
                   <BsFacebook />
                 </a>
               </li>
               <li className="instagram-link">
-                <a className="button-styling-2 a">
+                <a className=" a">
                   <BsInstagram />
                 </a>
               </li>
               <li className=" twitter-link">
-                <a className="button-styling-2  a">
+                <a className=" a">
                   <BsTwitter />
                 </a>
               </li>
@@ -67,7 +67,10 @@ function Userprofile(props) {
                 <div key={idx} className="user-project border">
                   <a>
                     <div className="user-project-image-wrap">
-                      <img className="image-ani user-project-img" src={Sampleimg2} />
+                      <img
+                        className="image-ani user-project-img"
+                        src={Sampleimg2}
+                      />
                     </div>
 
                     {/* <div className="user-project-detail">

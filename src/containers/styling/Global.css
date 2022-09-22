@@ -23,12 +23,12 @@
 }
 
 .a {
-  color: #666666;
+  color: #010101;
   cursor: pointer;
 }
 
 .a:hover {
-  color: #010101;
+  color: #666666;
 }
 
 .image-ani {

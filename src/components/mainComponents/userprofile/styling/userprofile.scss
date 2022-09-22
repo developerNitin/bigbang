@@ -97,16 +97,11 @@ $xxxxlargefontsize: 36px;
   margin-top: 5px;
   ul {
     display: flex;
-  flex-direction: column;
+    flex-direction: row;
     .facebook-link,
     .instagram-link {
-      margin-bottom: 15px;
+      margin-right: 15px;
     }
-  }
-  ul li a {
-    display: flex;
-    padding: 13px;
-    background-color: transparent;
   }
   ul li a svg {
     height: 20px;

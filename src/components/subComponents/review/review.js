@@ -34,7 +34,7 @@ function Review() {
         <div className="public-review">
           {reivews.map((i, idx) => {
             return (
-              <div className="public-review-wrap">
+              <div key={idx} className="public-review-wrap">
                 <div className="public-review-wrap-first-child">
                   <div className="public-person-img">
                     <img className="img-icon-border" src={Sampleimg1} />

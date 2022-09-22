@@ -12,9 +12,31 @@ import Review from "../../subComponents/review/review";
 import { AiFillStar } from "react-icons/ai";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useState } from "react";
 
 const Product = () => {
-  const images = [
+  const [images, setImages] = useState([
+    Sampleimg1,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ]);
+
+  const style1 = { border: "3px solid #191919", borderRadius: "3px" };
+  const style2 = { border: "3px solid transparent", borderRadius: "3px" };
+
+  const [style, setStyle] = useState([
+    style1,
+    style2,
+    style2,
+    style2,
+    style2,
+    style2,
+  ]);
+
+  const realStuff = [
     Sampleimg1,
     Sampleimg2,
     Sampleimg3,
@@ -22,50 +44,59 @@ const Product = () => {
     Sampleimg5,
     Sampleimg6,
   ];
+
+  function onClickImageHandler(props) {
+    switch (props) {
+      case 0:
+        setImages([Sampleimg1, null, null, null, null, null]);
+        setStyle([style1, style2, style2, style2, style2, style2]);
+        break;
+      case 1:
+        setImages([null, Sampleimg2, null, null, null, null]);
+        setStyle([style2, style1, style2, style2, style2, style2]);
+        break;
+      case 2:
+        setImages([null, null, Sampleimg3, null, null, null]);
+        setStyle([style2, style2, style1, style2, style2, style2]);
+        break;
+      case 3:
+        setImages([null, null, null, Sampleimg4, null, null]);
+        setStyle([style2, style2, style2, style1, style2, style2]);
+        break;
+      case 4:
+        setImages([null, null, null, null, Sampleimg5, null]);
+        setStyle([style2, style2, style2, style2, style1, style2]);
+        break;
+      case 5:
+        setImages([null, null, null, null, null, Sampleimg6]);
+        setStyle([style2, style2, style2, style2, style2, style1]);
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
     <div className="page product-page">
       <div className="product-page-wrap">
-        {/* <div className="product-images">
-          <div className="product-images-wrap">
-            <div className="product-images-wrap-first-child">
-              <div className="product-images-wrap-first-child-first-child">
-                <img src={Sampleimg2} />
-              </div>
-              <div className="product-images-wrap-first-child-second-child">
-                <img
-                  className="product-images-wrap-first-child-second-child-first-child"
-                  src={Sampleimg1}
-                />
-                <img src={Sampleimg3} />
-              </div>
-            </div>
-            <div className="product-images-wrap-second-child">
-              <div className="product-images-wrap-second-child-first-child">
-                <img
-                  className="product-images-wrap-second-child-first-child-first-child"
-                  src={Sampleimg4}
-                />
-                <img src={Sampleimg5} />
-              </div>
-              <div className="product-images-wrap-second-child-second-child">
-                <img src={Sampleimg6} />
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className="product-page-images">
           <div className="product-page-images-wrap">
             <div>
               {images.map((i, idx) => {
-                return <img key={idx} src={i} />;
+                return <img key={idx} src={i} alt="" />;
               })}
             </div>
           </div>
           <div className="product-page-images-change-bar">
-            {images.map((i, idx) => {
+            {realStuff.map((i, idx) => {
               return (
-                <div>
-                  <img key={idx} src={i} />
+                <div key={idx}>
+                  <button
+                    style={style[idx]}
+                    onClick={() => onClickImageHandler(idx)}
+                  >
+                    <img src={i} />
+                  </button>
                 </div>
               );
             })}
@@ -81,7 +112,7 @@ const Product = () => {
               </div>
               <h1 className="h1 product-info-heading">She Unicone</h1>
               <div className="product-info-user-name">
-                <a className="a ">- Angela Su</a>
+                <a className="a">- Angela Su</a>
               </div>
               <div className="product-review">
                 <a className="a">
@@ -108,18 +139,6 @@ const Product = () => {
                 </a>
               </div>
             </div>
-
-            {/* <div className="product-page-description">
-              <div className="product-page-description-wrap">
-                <p className="p product-page-description-paragraph">
-                  <span>About project: </span>Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Vivamus imperdiet eros id nisi
-                  vulputate porttitor. Curabitur vitae enim quis turpis
-                  condimentum dictum. Nam ullamcorper id lacus id ornare. Duis
-                  lacus nunc, scelerisque id suscipit quis, finibus vel erat.
-                </p>
-              </div>
-            </div> */}
           </div>
         </div>
 
@@ -202,3 +221,48 @@ const Product = () => {
 };
 
 export default Product;
+
+{
+  /* <div className="product-images">
+          <div className="product-images-wrap">
+            <div className="product-images-wrap-first-child">
+              <div className="product-images-wrap-first-child-first-child">
+                <img src={Sampleimg2} />
+              </div>
+              <div className="product-images-wrap-first-child-second-child">
+                <img
+                  className="product-images-wrap-first-child-second-child-first-child"
+                  src={Sampleimg1}
+                />
+                <img src={Sampleimg3} />
+              </div>
+            </div>
+            <div className="product-images-wrap-second-child">
+              <div className="product-images-wrap-second-child-first-child">
+                <img
+                  className="product-images-wrap-second-child-first-child-first-child"
+                  src={Sampleimg4}
+                />
+                <img src={Sampleimg5} />
+              </div>
+              <div className="product-images-wrap-second-child-second-child">
+                <img src={Sampleimg6} />
+              </div>
+            </div>
+          </div>
+        </div> */
+}
+
+{
+  /* <div className="product-page-description">
+              <div className="product-page-description-wrap">
+                <p className="p product-page-description-paragraph">
+                  <span>About project: </span>Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Vivamus imperdiet eros id nisi
+                  vulputate porttitor. Curabitur vitae enim quis turpis
+                  condimentum dictum. Nam ullamcorper id lacus id ornare. Duis
+                  lacus nunc, scelerisque id suscipit quis, finibus vel erat.
+                </p>
+              </div>
+            </div> */
+}

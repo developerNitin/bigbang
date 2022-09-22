@@ -117,23 +117,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .user-profile .user-detail .user-social-media-links ul .facebook-link,
 .user-profile .user-detail .user-social-media-links ul .instagram-link {
-  margin-bottom: 15px;
-}
-
-.user-profile .user-detail .user-social-media-links ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 13px;
-  background-color: transparent;
+  margin-right: 15px;
 }
 
 .user-profile .user-detail .user-social-media-links ul li a svg {
