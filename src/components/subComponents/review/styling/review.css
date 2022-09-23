@@ -46,6 +46,7 @@
   font-size: 16px;
   padding: 10px;
   height: 100px;
+  border-color: #191919;
 }
 
 .review .review-wrap .post-a-comment .post-a-comment-button {
@@ -59,6 +60,7 @@
 
 .review .review-wrap .post-a-comment .post-a-comment-button a {
   font-size: 14px;
+  width: 180px;
 }
 
 .review .public-review {

@@ -17,8 +17,11 @@ $xxxxlargefontsize: 36px;
   position: fixed;
   width: 100vw;
   top: 0px;
-  background-color: $colorwhite;
+  background-color: #ffffff4d;
   z-index: 300;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
 }
 
 .header .navbar {

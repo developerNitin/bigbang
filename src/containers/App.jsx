@@ -1,6 +1,7 @@
 import "./styling/Global.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "../components/subComponents/header/header";
+import Footer from "../components/subComponents/footer/footer";
 
 //pages
 import MainPage from "../components/mainComponents/mainPage/mainPage";
@@ -39,6 +40,7 @@ export default function App() {
             );
           })}
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

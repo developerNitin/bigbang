@@ -14,8 +14,7 @@ function Review() {
       name: "Angela Su",
       comment:
         "The colors of the project and these incredible details are perfectly selected! You are talented",
-    },
-    { name: "Angela Su", comment: "cool!" },
+    }
   ];
   return (
     <div className="review">
@@ -27,10 +26,10 @@ function Review() {
             <textarea className="border" />
           </div>
           <div className="post-a-comment-button">
-            <a className="button-styling-2">POST A COMMENT</a>
+            <a className="button-styling">POST A COMMENT</a>
           </div>
         </div>
-        <hr className="hr" />
+        <hr className="hr review-major-hr" />
         <div className="public-review">
           {reivews.map((i, idx) => {
             return (

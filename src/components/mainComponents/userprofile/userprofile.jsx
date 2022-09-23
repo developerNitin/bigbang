@@ -3,16 +3,16 @@ import "./styling/userprofile.css";
 import Sampleimg1 from "./assets/sample-img-5.jpg";
 import Sampleimg2 from "./assets/sample-img-4.jpg";
 
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+// import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 function Userprofile(props) {
   return (
     <div className="user-profile">
-      {/* <div className="cover-img">
+      <div className="cover-img">
         <div className="cover-img-container">
           <img src={props.coverimg} />
         </div>
-      </div> */}
+      </div>
       <div className="page user-profile-wrap">
         <div className="user-detail">
           <div className="user-detail-wrap">
@@ -20,20 +20,18 @@ function Userprofile(props) {
               <img src={Sampleimg1} />
             </div>
             <div className="user-detail-wrap-second-child">
-              <div className="user-detail-wrap-second-child-first-child">
-                <h2 className="h1">{props.title} | logo designer</h2>
-                <h1 className="h1 user-name">{props.name}</h1>
-              </div>
-              <div className="user-detail-links">
+              <h2 className="h1">{props.title} | logo designer</h2>
+              <h1 className="h1 user-name">{props.name}</h1>
+            </div>
+            <div className="user-detail-links">
                 <a className="button-styling follow-me">CONTACT ME</a>
                 <a className="button-styling-2">FOLLOW</a>
-              </div>
             </div>
             {/* <p className="p description">
             Description: <span>{props.description}</span>
           </p> */}
           </div>
-          <div className="user-social-media-links">
+          {/* <div className="user-social-media-links">
             <ul className="ul user-social-media-links-wrap">
               <li className="facebook-link">
                 <a className=" a">
@@ -51,7 +49,7 @@ function Userprofile(props) {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="user-works">

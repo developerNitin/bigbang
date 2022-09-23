@@ -1,9 +1,6 @@
 .user-profile {
   background-color: #f9f9f9;
-}
-
-.user-profile .user-profile-wrap {
-  padding-top: 130px;
+  padding-bottom: 50px;
 }
 
 .user-profile .user-detail {
@@ -15,6 +12,11 @@
           justify-content: space-between;
 }
 
+.user-profile .cover-img {
+  overflow: hidden;
+  position: relative;
+}
+
 .user-profile .cover-img .cover-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,6 +25,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+
+.user-profile .cover-img .cover-img-container img {
+  height: 30vh;
 }
 
 .user-profile .user-detail .user-detail-wrap {
@@ -51,39 +59,50 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  position: relative;
+  z-index: 3;
 }
 
 .user-profile .user-detail .user-detail-wrap h2 {
-  font-size: 32px;
-  margin-bottom: 8px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-name {
-  font-size: 56px;
   margin-bottom: 24px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-img {
-  margin-bottom: 24px;
+  height: 116px;
+  width: 116px;
+  margin: -58px auto 10px auto;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-img img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   border-radius: 100px;
+  border: 8px solid #f9f9f9;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-detail-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-detail-links a {
   font-size: 16px;
+  width: 170px;
 }
 
 .user-profile .user-detail .user-detail-wrap .user-detail-links .follow-me {
@@ -103,34 +122,6 @@
 .user-profile .user-detail .contact-me,
 .user-profile .user-detail .description {
   margin-bottom: 10px;
-}
-
-.user-profile .user-detail .user-social-media-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: auto;
-  margin-top: 5px;
-}
-
-.user-profile .user-detail .user-social-media-links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.user-profile .user-detail .user-social-media-links ul .facebook-link,
-.user-profile .user-detail .user-social-media-links ul .instagram-link {
-  margin-right: 15px;
-}
-
-.user-profile .user-detail .user-social-media-links ul li a svg {
-  height: 20px;
-  width: 20px;
 }
 
 .user-profile .user-works {

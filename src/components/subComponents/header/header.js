@@ -2,7 +2,7 @@ import "./styling/header.css";
 
 export default function Header() {
   return (
-    <header className="border header">
+    <header className="header">
       <div className="navbar">
         <div className="nav-link-left">
           <ul className="ul">
@@ -34,6 +34,7 @@ export default function Header() {
           </ul>
         </div>
       </div>
+      {/* <hr className="hr"/> */}
     </header>
   );
 };

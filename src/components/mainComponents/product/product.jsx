@@ -79,6 +79,20 @@ const Product = () => {
   return (
     <div className="page product-page">
       <div className="product-page-wrap">
+        <div className="product-page-header">
+          <div>
+            <div>
+              <img src={Sampleimg3} />
+            </div>
+            <div>
+              <h1 className="h1">Angela Su</h1>
+              <p className="p">Illustrator | logo designer</p>
+            </div>
+          </div>
+          <div>
+            <button className="button-styling-2">FOLLOW</button>
+          </div>
+        </div>
         <div className="product-page-images">
           <div className="product-page-images-wrap">
             <div>
@@ -201,8 +215,8 @@ const Product = () => {
                 </div>
               </div>
               <div className="product-owner-detail-button-wrap">
-                <a className="button-styling-2 product-owner-detail-button-hire-me">
-                  HIRE ME
+                <a className="button-styling product-owner-detail-button-hire-me">
+                  HIRE US
                 </a>
                 {/* <a className="button-styling-2 product-owner-detail-button-follow">
                   FOLLOW
