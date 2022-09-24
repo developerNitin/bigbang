@@ -1,7 +1,7 @@
 import "./styling/banner.css";
 
 import { GoSearch } from "react-icons/go";
-import { MdOutlineDoubleArrow } from "react-icons/md";
+// import { MdOutlineDoubleArrow } from "react-icons/md";
 
 import image from "../assets/sample-img-5.jpg";
 
@@ -32,7 +32,7 @@ const Banner = () => {
               <figure>
                 <GoSearch />
               </figure>
-              <input placeholder="Search works..." />
+              <input className="border" placeholder="Search works..." />
             </form>
           </div>
           {/* <div className="popular-tags">

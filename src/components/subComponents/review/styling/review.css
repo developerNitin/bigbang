@@ -15,7 +15,7 @@
 }
 
 .review .review-wrap .post-a-comment {
-  padding: 30px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,12 +29,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .review .review-wrap .post-a-comment .post-a-comment-input-field img {
   width: 50px;
-  margin-right: 20px;
+  margin-right: 30px;
   margin-bottom: auto;
   border-radius: 50px;
 }
@@ -46,7 +46,6 @@
   font-size: 16px;
   padding: 10px;
   height: 100px;
-  border-color: #191919;
 }
 
 .review .review-wrap .post-a-comment .post-a-comment-button {
@@ -71,6 +70,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px 50px;
 }
 
 .review .public-review .public-review-wrap {
@@ -87,19 +87,19 @@
 }
 
 .review .public-review .public-review-wrap hr {
-  margin: 0 30px;
+  margin: 0px;
 }
 
 .review .public-review .public-review-wrap .public-review-wrap-first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 40px 0;
 }
 
 .review .public-review .public-review-wrap .public-person-img {
   width: 50px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .review .public-review .public-review-wrap .public-person-img img {

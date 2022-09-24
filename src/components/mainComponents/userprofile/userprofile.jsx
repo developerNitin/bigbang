@@ -2,6 +2,7 @@ import "./styling/userprofile.css";
 
 import Sampleimg1 from "./assets/sample-img-5.jpg";
 import Sampleimg2 from "./assets/sample-img-4.jpg";
+import Review from "../../subComponents/review/review";
 
 // import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
@@ -24,8 +25,8 @@ function Userprofile(props) {
               <h1 className="h1 user-name">{props.name}</h1>
             </div>
             <div className="user-detail-links">
-                <a className="button-styling follow-me">CONTACT ME</a>
-                <a className="button-styling-2">FOLLOW</a>
+              <a className="button-styling follow-me">CONTACT ME</a>
+              <a className="button-styling-2">FOLLOW</a>
             </div>
             {/* <p className="p description">
             Description: <span>{props.description}</span>
@@ -85,6 +86,7 @@ function Userprofile(props) {
             })}
           </div>
         </div>
+        <Review />
       </div>
     </div>
   );

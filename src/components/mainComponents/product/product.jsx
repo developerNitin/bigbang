@@ -90,7 +90,7 @@ const Product = () => {
             </div>
           </div>
           <div>
-            <button className="button-styling-2">FOLLOW</button>
+            <button className="button-styling">FOLLOW</button>
           </div>
         </div>
         <div className="product-page-images">
@@ -120,11 +120,16 @@ const Product = () => {
           <div className="product-info-wrap">
             <div className="product-info-wrap-first-child">
               <div className="product-page-cart-links">
-                <a className="button-styling product-page-cart-links-wrap">
-                  ADD TO CART
-                </a>
+                <button className="button-styling product-page-cart-links-wrap">
+                  HIRE US
+                </button>
               </div>
-              <h1 className="h1 product-info-heading">She Unicone</h1>
+              <h1 className="h1 product-info-heading">
+                She Unicone - The colors of the project and these incredible
+                details
+                <br /> are perfectly selected! You are talented project.
+              </h1>
+
               <div className="product-info-user-name">
                 <a className="a">- Angela Su</a>
               </div>
@@ -156,52 +161,6 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="suggested-project">
-          <div className="suggested-project-scroll-icons-1">
-            <button className="button-styling-2 suggested-project-scroll-icons-1-button">
-              <MdKeyboardArrowLeft />
-            </button>
-          </div>
-
-          <div className="suggested-project-wrap">
-            <div className="suggested-project-img-wrap">
-              <a className="a">
-                <img className="image-ani" src={Sampleimg1} />
-              </a>
-            </div>
-            <div className="suggested-project-img-wrap">
-              <a className="a">
-                <img className="image-ani" src={Sampleimg2} />
-              </a>
-            </div>
-            <div className="suggested-project-img-wrap">
-              <a className="a">
-                <img className="image-ani" src={Sampleimg3} />
-              </a>
-            </div>
-            <div className="suggested-project-img-wrap">
-              <a className="a">
-                <img className="image-ani" src={Sampleimg4} />
-              </a>
-            </div>
-            <div className="suggested-project-img-wrap">
-              <a children="a">
-                <img className="image-ani" src={Sampleimg5} />
-              </a>
-            </div>
-            <div className="suggested-project-img-wrap">
-              <a className="a">
-                <img className="image-ani" src={Sampleimg6} />
-              </a>
-            </div>
-          </div>
-
-          <div className="suggested-project-scroll-icons-2">
-            <button className="button-styling-2 suggested-project-scroll-icons-2-button">
-              <MdKeyboardArrowRight />
-            </button>
-          </div>
-        </div>
         <div className="product-owner-detail">
           <Review />
           <div className="product-owner-detail-wrap">
@@ -226,6 +185,55 @@ const Product = () => {
             <div className="border product-owner-detail-wrap-second-child">
               <h1 className="h1">She Unicone</h1>
               <p className="p">Published: 9 sept 2022</p>
+            </div>
+          </div>
+        </div>
+        <div className="suggested-project-parent">
+        {/* <hr className="hr"/> */}
+          <div className="suggested-project">
+            <div className="suggested-project-scroll-icons-1">
+              <button className="button-styling suggested-project-scroll-icons-1-button">
+                <MdKeyboardArrowLeft />
+              </button>
+            </div>
+
+            <div className="suggested-project-wrap">
+              <div className="suggested-project-img-wrap">
+                <a className="a">
+                  <img className="image-ani" src={Sampleimg1} />
+                </a>
+              </div>
+              <div className="suggested-project-img-wrap">
+                <a className="a">
+                  <img className="image-ani" src={Sampleimg2} />
+                </a>
+              </div>
+              <div className="suggested-project-img-wrap">
+                <a className="a">
+                  <img className="image-ani" src={Sampleimg3} />
+                </a>
+              </div>
+              <div className="suggested-project-img-wrap">
+                <a className="a">
+                  <img className="image-ani" src={Sampleimg4} />
+                </a>
+              </div>
+              <div className="suggested-project-img-wrap">
+                <a children="a">
+                  <img className="image-ani" src={Sampleimg5} />
+                </a>
+              </div>
+              <div className="suggested-project-img-wrap">
+                <a className="a">
+                  <img className="image-ani" src={Sampleimg6} />
+                </a>
+              </div>
+            </div>
+
+            <div className="suggested-project-scroll-icons-2">
+              <button className="button-styling suggested-project-scroll-icons-2-button">
+                <MdKeyboardArrowRight />
+              </button>
             </div>
           </div>
         </div>

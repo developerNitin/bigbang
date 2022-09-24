@@ -1,14 +1,13 @@
 .footer {
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 
-.footer hr {
-  border-color: #666666;
-  margin-top: 40px;
+.footer hr:nth-child(2) {
+  margin: 0 100px;
 }
 
 .footer .footer-wrap {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 
@@ -25,11 +24,13 @@
 
 .footer .footer-wrap .footer-top .footer-about-us p {
   font-size: 16px;
+  line-height: 25px;
 }
 
 .footer .footer-wrap .footer-top .footer-about-us h1 {
   font-size: 20px;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 .footer .footer-wrap .footer-link {
@@ -42,6 +43,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding-bottom: 40px;
 }
 
 .footer .footer-wrap .footer-link .footer-link-wrap {

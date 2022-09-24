@@ -152,6 +152,7 @@ $xxxxlargefontsize: 36px;
   display: grid;
   margin-right: -30px;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
 }
 
 .user-profile .user-works .user-project-wrap .user-project {
@@ -166,8 +167,8 @@ $xxxxlargefontsize: 36px;
     overflow: hidden;
     img {
       width: 100%;
-      margin-top: -10%;
-      margin-bottom: -10%;
+      margin-top: -12%;
+      margin-bottom: -12%;
     }
   }
   h1 {

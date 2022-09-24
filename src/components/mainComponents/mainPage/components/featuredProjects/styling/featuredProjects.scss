@@ -47,8 +47,21 @@ $xxxxlargefontsize: 36px;
   background-color: white;
   flex-direction: column;
   margin-right: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  .user-project-image-wrap {
+    overflow: hidden;
+    display: flex;
+  }
   img {
     width: 100%;
+    transition: all ease 0.3s;
+  }
+
+  &:hover {
+    img {
+      scale: 105%;
+    }
   }
   h1 {
     font-size: $mediumfontsize;

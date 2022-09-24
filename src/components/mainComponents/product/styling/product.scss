@@ -32,7 +32,7 @@ $imagesSpacing: 5px;
 }
 
 .product-page .product-page-wrap .product-page-header {
-  width: 700px;
+  width: 750px;
   margin: 0 auto;
   padding-top: 30px;
   display: flex;
@@ -44,6 +44,10 @@ $imagesSpacing: 5px;
   div:nth-child(2) {
     display: flex;
   }
+  button {
+    font-size: $smallfontsize;
+  }
+
   div:nth-child(1) div:nth-child(1) {
     width: 60px;
     height: 60px;
@@ -98,7 +102,7 @@ $imagesSpacing: 5px;
   width: 700px;
   flex: 1;
   display: flex;
-  margin: 20px auto 30px;
+  margin: 20px auto 40px;
   div {
     display: flex;
     width: 100%;
@@ -126,36 +130,33 @@ $imagesSpacing: 5px;
   .product-info-wrap {
     display: flex;
     flex-direction: column;
+    a {
+      color: #9e9e9e;
+    }
+    a:hover {
+      color: $colorwhite;
+    }
     .product-info-wrap-first-child {
-      .product-info-user-name {
-        a {
-          color: $colorgrey;
-        }
-        a:hover {
-          color: $colorwhite;
-        }
-      }
       text-align: center;
-      padding: 50px 0;
+      padding: 40px 0;
       background-color: $colordarkgrey;
+      border-radius: 3px;
     }
   }
 
   .product-info-wrap .product-info-heading {
     font-size: $xxlargefontsize;
     color: $colorwhite;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-style: italic;
   }
 
   .product-info-wrap .product-review {
     display: flex;
     align-items: center;
     justify-content: center;
-    a {
-      color: $colorgrey;
-    }
-    a:hover {
-      color: $colorwhite;
-    }
+
     .product-info-review-stars {
       margin-right: 5px;
       span {
@@ -173,7 +174,11 @@ $imagesSpacing: 5px;
     align-items: center;
     margin-bottom: 20px;
     .product-page-cart-links-wrap {
+      letter-spacing: 1.2px;
       border-color: $colorwhite;
+      background-color: inherit;
+      font-style: italic;
+
     }
   }
 
@@ -187,9 +192,14 @@ $imagesSpacing: 5px;
   //   }
   // }
 }
+
+.product-page .product-page-wrap .suggested-project-parent {
+  margin-top: 50px;
+}
+
 .product-page .product-page-wrap .suggested-project {
-  padding: 0 50px 50px 50px;
-  background-color: $colordarkgrey;
+  //  padding-top: 20px;
+  // background-color: $colorwhite;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -216,9 +226,9 @@ $imagesSpacing: 5px;
   .suggested-project-img-wrap {
     display: inline-block;
     // float: none;
-    width: calc(33.3% - 6.36px);
+    width: calc(25% - 15px);
     overflow: hidden;
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 3px;
     vertical-align: bottom;
   }
@@ -269,7 +279,8 @@ $imagesSpacing: 5px;
 
 .product-page .product-page-wrap .product-owner-detail {
   display: flex;
-  padding: 50px;
+  padding: 50px 0;
+  padding-bottom: 0;
   background-color: $lightbluebgcolor;
   .product-owner-detail-owner-label {
     display: block;
@@ -280,7 +291,7 @@ $imagesSpacing: 5px;
 
   .product-owner-detail-wrap {
     margin-bottom: auto;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 360px;
   }
 
@@ -313,9 +324,10 @@ $imagesSpacing: 5px;
     flex-direction: column;
     width: 100%;
     a {
-      font-size: $mediumfontsize;
+      font-size: $smallfontsize;
     }
     .product-owner-detail-button-hire-me {
+      // font-size: $smallfontsize;
       margin-bottom: 10px;
     }
   }
@@ -329,7 +341,7 @@ $imagesSpacing: 5px;
   background: $colorwhite;
   h1 {
     font-size: $mediumfontsize;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   p {
     font-size: $smallfontsize;

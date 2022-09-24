@@ -24,15 +24,15 @@ $xxxxlargefontsize: 36px;
 .review .review-wrap {
 flex: 1;
   .post-a-comment {
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     .post-a-comment-input-field {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       img {
         width: 50px;
-        margin-right: 20px;
+        margin-right: 30px;
         margin-bottom: auto;
         border-radius: 50px;
       }
@@ -41,7 +41,7 @@ flex: 1;
         font-size: $mediumfontsize;
         padding: 10px;
         height: 100px;
-        border-color: $colordarkgrey;
+        // border-color: $colorgrey;
       }
     }
     .post-a-comment-button {
@@ -59,6 +59,7 @@ flex: 1;
 .review .public-review {
   display: flex;
   flex-direction: column;
+  padding: 10px 50px;
 }
 
 .review .public-review .public-review-wrap {
@@ -67,16 +68,16 @@ flex: 1;
   flex-direction: column;
 
   hr {
-    margin: 0 30px;
+    margin: 0px;
   }
   .public-review-wrap-first-child {
     display: flex;
-    padding: 30px;
+    padding: 40px 0;
   }
 
   .public-person-img {
     width: 50px;
-    margin-right: 20px;
+    margin-right: 30px;
     img {
       width: 50px;
       border-radius: 50px;

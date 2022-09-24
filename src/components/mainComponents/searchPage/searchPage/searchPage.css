@@ -1,0 +1,130 @@
+.search-page h1 {
+  text-align: center;
+  margin-top: 30px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.search-page .cover-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.search-page .cover-img .cover-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+  background-color: #f2f2f2;
+}
+
+.search-page .cover-img .cover-img-container img {
+  height: inherit;
+}
+
+.search-page .user-works {
+  padding-top: 20px;
+}
+
+.search-page .user-works hr {
+  margin-bottom: 30px;
+}
+
+.search-page .search-form {
+  position: relative;
+  z-index: 100;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.search-page .search-form form {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-page .search-form form figure {
+  margin: 0;
+  position: absolute;
+  margin-left: 15px;
+  margin-bottom: -3px;
+}
+
+.search-page .search-form form figure svg {
+  width: 20px;
+  height: 20px;
+}
+
+.search-page .search-form input {
+  height: inherit;
+  width: 100%;
+  padding: 0 20px 0 50px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.search-page .user-works .user-works-heading h1 {
+  font-size: 20px;
+  color: #010101;
+  text-align: left;
+}
+
+.search-page .user-works .user-works-heading h1 span {
+  color: #666666;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.search-page .user-works .user-project-wrap {
+  display: -ms-grid;
+  display: grid;
+  margin-right: -30px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.search-page .user-works .user-project-wrap .user-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-page .user-works .user-project-wrap .user-project .user-project-image-wrap {
+  overflow: hidden;
+}
+
+.search-page .user-works .user-project-wrap .user-project .user-project-image-wrap img {
+  width: 100%;
+  margin-top: -12%;
+  margin-bottom: -12%;
+}
+
+.search-page .user-works .user-project-wrap .user-project h1 {
+  font-size: 16px;
+}
+
+.search-page .user-works .user-works-heading,
+.search-page .user-works .user-project-wrap .user-project {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=searchPage.css.map */

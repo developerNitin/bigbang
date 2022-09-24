@@ -10,11 +10,6 @@ function Review() {
         "The colors of the project and these incredible details are perfectly selected! You are talented",
     },
     { name: "Angela Su", comment: "nice work" },
-    {
-      name: "Angela Su",
-      comment:
-        "The colors of the project and these incredible details are perfectly selected! You are talented",
-    }
   ];
   return (
     <div className="review">

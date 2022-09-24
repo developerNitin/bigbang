@@ -53,7 +53,9 @@ export default function FeaturedProjects() {
             return (
               <div key={idx} className="user-project border">
                 <a>
-                  <img className="user-project-img" src={i.img} />
+                  <div className="user-project-image-wrap">
+                    <img className="user-project-img" src={i.img} />
+                  </div>
                   <div className="user-project-detail">
                     <h1 className="h1 user-project-heading">{i.heading}</h1>
                     <p className="p user-project-title">{i.title}</p>

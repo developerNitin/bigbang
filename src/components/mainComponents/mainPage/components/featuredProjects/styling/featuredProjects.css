@@ -42,10 +42,25 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-image-wrap {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project img {
   width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project:hover img {
+  scale: 105%;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project h1 {

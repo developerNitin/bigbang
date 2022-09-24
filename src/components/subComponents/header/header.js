@@ -16,7 +16,7 @@ export default function Header() {
               <a href="/product" className="a">Product</a>
             </li>
             <li>
-              <a className="a">Explore</a>
+              <a href="/search" className="a">Explore</a>
             </li>
             <li>
               <a className="a">Help</a>
