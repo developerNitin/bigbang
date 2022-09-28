@@ -10,6 +10,8 @@ export default function ProductContainer({ i }) {
       date={i.date}
       image = {i.image}
       parenturl={i.parenturl}
+      parentindex={i.parentindex}
+      index={i.index}
     />
   );
 }

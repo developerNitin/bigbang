@@ -6,8 +6,8 @@ import Footer from "./UI/footer/footer";
 //user-data
 import Userdata from "./userdata";
 
-import { Suspense, lazy } from "react";
 //components
+import { Suspense, lazy } from "react";
 const Home = lazy(() => import("./components/home/home"));
 const Product = lazy(() => import("./containers/ProductContainer"));
 const SearchPage = lazy(() => import("./components/search/search"));
@@ -23,13 +23,12 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/search" element={<SearchPage />} />
-
             {Userdata.map((user, idx) => (
               <>
                 {user.products.map((product, keyid) => (
                   <Route
                     path={product.url}
-                    key={idx}
+                    key={keyid}
                     element={<Product i={product} key={keyid} />}
                   />
                 ))}

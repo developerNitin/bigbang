@@ -114,6 +114,16 @@
 }
 
 .product-page .product-page-wrap .product-info .product-info-wrap .product-info-wrap-first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 40px 0;
   background-color: #191919;
@@ -126,6 +136,9 @@
   margin-bottom: 15px;
   font-weight: normal;
   font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 800px;
 }
 
 .product-page .product-page-wrap .product-info .product-info-wrap .product-review {

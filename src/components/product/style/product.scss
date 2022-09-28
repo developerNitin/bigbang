@@ -94,6 +94,9 @@ $imagesSpacing: 5px;
       color: $colorwhite;
     }
     .product-info-wrap-first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
       padding: 40px 0;
       background-color: $colordarkgrey;
@@ -107,6 +110,9 @@ $imagesSpacing: 5px;
     margin-bottom: 15px;
     font-weight: normal;
     font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 800px;
   }
 
   .product-info-wrap .product-review {
@@ -135,10 +141,8 @@ $imagesSpacing: 5px;
       border-color: $colorwhite;
       background-color: inherit;
       font-style: italic;
-
     }
   }
-
 }
 
 //----

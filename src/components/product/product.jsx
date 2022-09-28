@@ -104,13 +104,15 @@ const Product = (props) => {
               </h1>
 
               <div className="product-info-user-name">
-                <a className="a" href={props.parenturl}>{props.name}</a>
+                <a className="a" href={props.parenturl}>
+                  {props.name}
+                </a>
               </div>
               <div className="product-review">
                 <a className="a">
                   <span className="product-info-review-stars">
-                    {[1, 2, 3, 4, 5].map(() => (
-                      <span>
+                    {[1, 2, 3, 4, 5].map((idx) => (
+                      <span key={idx}>
                         <AiFillStar />
                       </span>
                     ))}
@@ -130,10 +132,14 @@ const Product = (props) => {
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
               <div className="product-ower-detail-img-nd-heading">
-                <img className="img-icon-border" src={Sampleimg5} />
+                <a className="a" href={props.parenturl}>
+                  <img className="img-icon-border" src={Sampleimg5} />
+                </a>
                 <div>
-                  <h1 className="h1">{props.name}</h1>
-                  <a className="a">- {props.location} -</a>
+                  <a className="a" href={props.parenturl}>
+                    <h1 className="h1">{props.name}</h1>
+                  </a>
+                  <a className="a">{props.location}</a>
                 </div>
               </div>
               <div className="product-owner-detail-button-wrap">
@@ -148,7 +154,7 @@ const Product = (props) => {
             </div>
           </div>
         </div>
-        <Suggestion />
+        <Suggestion parentindex={props.parentindex} index={props.index} />
       </div>
     </div>
   );
