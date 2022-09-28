@@ -1,0 +1,149 @@
+//color
+$colorblack: #010101;
+$colorgrey: #666666;
+$colorwhite: #ffffff;
+$lightbluebgcolor: #f9f9f9;
+
+//font-size
+$smallfontsize: 14px;
+$mediumfontsize: 16px;
+$largefontsize: 18px;
+$xlargefontsize: 20px;
+$xxlargefontsize: 24px;
+$xxxlargefontsize: 30px;
+$xxxxlargefontsize: 36px;
+
+.search-page {
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: $xxxlargefontsize;
+  }
+} 
+
+.search-page .cover-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.search-page .cover-img .cover-img-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+  background-color: $lightbluebgcolor;
+  img {
+    height: inherit;
+  }
+}
+
+.search-page .user-works {
+  padding-top: 20px;
+  hr {
+    margin-bottom: 30px;
+  }
+}
+
+//
+
+.search-page .search-form {
+  position: relative;
+  z-index: 100;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+.search-page .search-form form {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  figure {
+    margin: 0;
+    position: absolute;
+    margin-left: 15px;
+    margin-bottom: -3px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.search-page .search-form input {
+  height: inherit;
+  width: 100%;
+  padding: 0 20px 0 50px;
+  border-radius: 3px;
+  font-size: $mediumfontsize;
+}
+
+//
+
+.search-page .user-works .user-works-heading {
+  h1 {
+    font-size: $xlargefontsize;
+    color: $colorblack;
+    text-align: left;
+    span {
+      color: $colorgrey;
+      margin-left: 10px;
+      font-size: $largefontsize;
+    }
+  }
+}
+
+.search-page .user-works .user-project-wrap {
+  display: grid;
+  margin-right: -30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.search-page .user-works .user-project-wrap .user-project {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  margin-right: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  .user-project-image-wrap {
+    overflow: hidden;
+    img {
+      width: 100%;
+      margin-top: -12%;
+      margin-bottom: -12%;
+    }
+  }
+  h1 {
+    font-size: $mediumfontsize;
+  }
+  // .user-project-detail {
+  //   padding: 15px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //   background-color: $colorwhite;
+  //   .user-project-heading,
+  //   p {
+  //     margin-bottom: 5px;
+  //     font-size: $smallfontsize;
+  //   }
+  //   .user-project-heading {
+  //     font-size: $mediumfontsize;
+  //   }
+  // }
+  // .user-project-pricing {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   font-size: $smallfontsize;
+  // }
+}
+
+.search-page .user-works .user-works-heading,
+.search-page .user-works .user-project-wrap .user-project {
+  margin-bottom: 30px;
+}
