@@ -1,0 +1,78 @@
+.suggested-project-parent {
+  margin-top: 50px;
+}
+
+.suggested-project-parent .suggested-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap a {
+  display: block;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap img {
+  margin-top: -12%;
+  margin-bottom: -12%;
+  width: 100%;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap {
+  display: inline-block;
+  width: calc(25% - 15px);
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 3px;
+  vertical-align: bottom;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-wrap :last-child {
+  margin-right: 0;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-scroll-icons-1 button,
+.suggested-project-parent .suggested-project .suggested-project-scroll-icons-2 button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: 0;
+  z-index: 3;
+}
+
+.suggested-project-parent .suggested-project .suggested-project-scroll-icons-1 button svg,
+.suggested-project-parent .suggested-project .suggested-project-scroll-icons-2 button svg {
+  height: 25px;
+  width: 25px;
+}
+/*# sourceMappingURL=suggestion.css.map */

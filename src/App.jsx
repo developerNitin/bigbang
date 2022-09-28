@@ -9,9 +9,9 @@ import Userdata from "./userdata";
 import { Suspense, lazy } from "react";
 //components
 const Home = lazy(() => import("./components/home/home"));
-const Product = lazy(() => import("./components/product/product"));
+const Product = lazy(() => import("./containers/ProductContainer"));
 const SearchPage = lazy(() => import("./components/search/search"));
-const UserProfile = lazy(() => import("./containers/UserProfile"));
+const UserProfile = lazy(() => import("./containers/UserProfileContainer"));
 
 export default function App() {
   return (
@@ -23,26 +23,20 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/search" element={<SearchPage />} />
-            {/* 
-            {Userdata.map(function (i) {
-              return i.products.map(function(i, idx) {
-               return <Route path={i.url} key={idx} element={<Product/>}/>
-              })
-            })} */}
 
             {Userdata.map((user, idx) => (
               <>
-                {user.products.map((product, idx) => (
+                {user.products.map((product, keyid) => (
                   <Route
                     path={product.url}
                     key={idx}
-                    element={<Product i={product} />}
+                    element={<Product i={product} key={keyid} />}
                   />
                 ))}
                 <Route
                   path={user.url}
                   key={idx}
-                  element={<UserProfile i={user} />}
+                  element={<UserProfile i={user} key={idx} />}
                 />
               </>
             ))}

@@ -13,7 +13,7 @@ export default function Header() {
               <a href="/angelasu" className="a">Userprofile</a>
             </li>
             <li>
-              <a href="/product" className="a">Product</a>
+              <a href="/angelasu/1" className="a">Product</a>
             </li>
             <li>
               <a href="/search" className="a">Explore</a>

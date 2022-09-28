@@ -1,6 +1,6 @@
 import Userprofile from "../components/userprofile/userprofile";
 
-export default function UserProfile({ i }) {
+export default function UserProfileContainer({ i }) {
   return (
     <Userprofile
       coverimg={i.coverImg}
