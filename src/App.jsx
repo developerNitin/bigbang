@@ -3,17 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./UI/header/header";
 import Footer from "./UI/footer/footer";
 
-
 //user-data
-import Userdata from "./components/userprofile/userdata";
+import Userdata from "./userdata";
 
 import { Suspense, lazy } from "react";
 //components
 const Home = lazy(() => import("./components/home/home"));
 const Product = lazy(() => import("./components/product/product"));
 const SearchPage = lazy(() => import("./components/search/search"));
-const Userprofile = lazy(() => import("./components/userprofile/userprofile") );
-
+const UserProfile = lazy(() => import("./containers/UserProfile"));
 
 export default function App() {
   return (
@@ -24,28 +22,30 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/product" element={<Product />} />
             <Route path="/search" element={<SearchPage />} />
-            {Userdata.map((i, idx) => {
-              return (
+            {/* 
+            {Userdata.map(function (i) {
+              return i.products.map(function(i, idx) {
+               return <Route path={i.url} key={idx} element={<Product/>}/>
+              })
+            })} */}
+
+            {Userdata.map((user, idx) => (
+              <>
+                {user.products.map((product, idx) => (
+                  <Route
+                    path={product.url}
+                    key={idx}
+                    element={<Product i={product} />}
+                  />
+                ))}
                 <Route
+                  path={user.url}
                   key={idx}
-                  path={i.url}
-                  element={
-                    <Userprofile
-                      coverimg={i.coverImg}
-                      name={i.name}
-                      title={i.title}
-                      website={i.website}
-                      since={i.since}
-                      location={i.location}
-                      description={i.description}
-                      products={i.products}
-                    />
-                  }
+                  element={<UserProfile i={user} />}
                 />
-              );
-            })}
+              </>
+            ))}
           </Routes>
         </Suspense>
         <Footer />

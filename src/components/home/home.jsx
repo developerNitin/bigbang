@@ -10,8 +10,11 @@ const MainPage = () => {
   return (
     <div className="main-page">
       <Banner />
-      <FeaturedProjects/>
+      <hr className="hr" />
+      <FeaturedProjects />
+      <hr className="hr" />
       <FeaturedServices />
+      <hr className="hr" />
       <FeaturedProfiles />
     </div>
   );
