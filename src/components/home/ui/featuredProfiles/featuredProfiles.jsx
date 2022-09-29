@@ -10,6 +10,8 @@ import Sampleimg6 from "../assets/sample-img-6.jpg";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
+import Userdata from "../../../../userdata";
+
 export default function Featured() {
   const FeaturedProfilesData = [
     {
@@ -65,28 +67,26 @@ export default function Featured() {
         </div>
 
         <div className="suggested-profiles-wrap">
-          {FeaturedProfilesData.map((i, idx) => {
-            return (
-              <div key={idx} className="border suggested-profiles-wrap-data">
-                <a className="">
-                  <div className="suggested-profiles-img-wrap">
-                    <img src={i.img1} />
+          {Userdata.map((i, idx) => (
+            <div key={idx} className="border suggested-profiles-wrap-data">
+              <a className="a" href={i.url}>
+                <div className="suggested-profiles-img-wrap">
+                  <img src={i.image[0]} />
+                </div>
+                <div className="suggested-profiles-user-profile">
+                  <div className="suggested-profiles-user-profile-image">
+                    <img src={i.image[2]} />
                   </div>
-                  <div className="suggested-profiles-user-profile">
-                    <div className="suggested-profiles-user-profile-image">
-                      <img src={i.img2} />
-                    </div>
-                    <div>
-                      <h3 className="h1">{i.title}</h3>
-                      <p className="p">
-                        by <span>{i.name}</span>
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="h1">{i.title}</h3>
+                    <p className="p">
+                      by <span>{i.name}</span>
+                    </p>
                   </div>
-                </a>
-              </div>
-            );
-          })}
+                </div>
+              </a>
+            </div>
+          ))}
         </div>
 
         <div className="suggested-profiles-scroll-icons-2">

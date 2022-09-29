@@ -11,7 +11,7 @@ const productdata1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   parenturl: "/angelasu",
   index: i,
   parentindex: 0,
-  heading: "Bigbang",
+  heading: "Bigbang1",
   location: "California, USA",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
@@ -27,7 +27,37 @@ const productdata2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   parenturl: "/supersu",
   index: i,
   parentindex: 1,
-  heading: "Bigbang",
+  heading: "Bigbang2",
+  location: "California, USA",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+  language: "English, Hindi",
+  pricing: "200$",
+  date: "9 sept 2022",
+  image: [image2, image1, image3, image4, image5, image6],
+}));
+const productdata3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
+  name: "Infi Su",
+  url: "infisu/" + i,
+  parenturl: "/infisu",
+  index: i,
+  parentindex: 1,
+  heading: "Bigbang3",
+  location: "California, USA",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+  language: "English, Hindi",
+  pricing: "200$",
+  date: "9 sept 2022",
+  image: [image2, image1, image3, image4, image5, image6],
+}));
+const productdata4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
+  name: "Peanut Su",
+  url: "peanutsu/" + i,
+  parenturl: "/peanutsu",
+  index: i,
+  parentindex: 1,
+  heading: "Bigbang4",
   location: "California, USA",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
@@ -41,7 +71,7 @@ const Userdata = [
   {
     name: "Angela Su",
     url: "angelasu",
-    title: "Illustrator",
+    title: "Digital Marketing",
     website: "AngelaSu.com",
     since: "2022",
     location: "California, USA",
@@ -67,7 +97,7 @@ const Userdata = [
   {
     name: "Super Su",
     url: "supersu",
-    title: "Illustrator",
+    title: "Graphic designer",
     website: "AngelaSu.com",
     since: "2022",
     location: "California, USA",
@@ -87,8 +117,61 @@ const Userdata = [
     education: "B.Sc. - Bs Commerce",
     certification: "Certified In Commerce Industry",
     coverImg: "assets/coverimg/coverImg.jpeg",
-    image: [image1, image2, image3, image4, image5, image6],
+    image: [image2, image1, image3, image4, image5, image6],
     products: productdata2,
+  },
+
+  {
+    name: "Infi Su",
+    url: "infisu",
+    title: "Product Designer",
+    website: "AngelaSu.com",
+    since: "2022",
+    location: "California, USA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+    language: "English, Hindi",
+    links: {
+      facebook: "facebook.com",
+      instagram: "instagram.com",
+      twitter: "twitter.com",
+    },
+    skills: {
+      1: "Digital marketing",
+      2: "Illustration",
+      3: "Web development",
+    },
+    education: "B.Sc. - Bs Commerce",
+    certification: "Certified In Commerce Industry",
+    coverImg: "assets/coverimg/coverImg.jpeg",
+    image: [image3, image2, image1, image4, image5, image6],
+    products: productdata3,
+  },
+  {
+    name: "Peanut Su",
+    url: "peanutsu",
+    title: "Web developer",
+    website: "AngelaSu.com",
+    since: "2022",
+    location: "California, USA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+    language: "English, Hindi",
+    links: {
+      facebook: "facebook.com",
+      instagram: "instagram.com",
+      twitter: "twitter.com",
+    },
+    skills: {
+      1: "Digital marketing",
+      2: "Illustration",
+      3: "Web development",
+    },
+    education: "B.Sc. - Bs Commerce",
+    certification: "Certified In Commerce Industry",
+    coverImg: "assets/coverimg/coverImg.jpeg",
+    image: [image4, image2, image3, image1, image5, image6],
+    products: productdata4,
   },
 ];
 

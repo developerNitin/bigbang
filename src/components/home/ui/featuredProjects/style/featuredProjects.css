@@ -36,7 +36,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -51,15 +50,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.featured-projects .user-works .user-project-wrap .user-project img {
-  width: 100%;
+.featured-projects .user-works .user-project-wrap .user-project .user-project-img {
+  height: 35vh;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-.featured-projects .user-works .user-project-wrap .user-project:hover img {
+.featured-projects .user-works .user-project-wrap .user-project:hover .user-project-img {
   scale: 105%;
 }
 
@@ -68,35 +73,28 @@
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-detail {
-  padding: 15px;
+  padding: 7px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading,
-.featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-title {
-  margin-bottom: 8px;
-  font-size: 14px;
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail div {
+  height: 25px;
+  width: 25px;
+  margin-right: 7px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail div img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading {
   font-size: 16px;
-}
-
-.featured-projects .user-works .user-project-wrap .user-project .user-project-pricing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 14px;
 }
 /*# sourceMappingURL=featuredProjects.css.map */

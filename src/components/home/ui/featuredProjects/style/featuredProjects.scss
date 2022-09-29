@@ -41,10 +41,8 @@ $xxxxlargefontsize: 36px;
   grid-template-columns: repeat(5, 1fr);
 }
 
-
 .featured-projects .user-works .user-project-wrap .user-project {
   display: flex;
-  background-color: white;
   flex-direction: column;
   margin-right: 20px;
   overflow: hidden;
@@ -52,14 +50,16 @@ $xxxxlargefontsize: 36px;
   .user-project-image-wrap {
     overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  img {
-    width: 100%;
+  .user-project-img {
+    height: 35vh;
     transition: all ease 0.3s;
   }
 
   &:hover {
-    img {
+    .user-project-img {
       scale: 105%;
     }
   }
@@ -67,22 +67,22 @@ $xxxxlargefontsize: 36px;
     font-size: $mediumfontsize;
   }
   .user-project-detail {
-    padding: 15px;
+    padding: 7px 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    .user-project-heading,
-    .user-project-title {
-      margin-bottom: 8px;
-      font-size: $smallfontsize;
+    align-items: center;
+    div {
+      height: 25px;
+      width: 25px;
+      margin-right: 7px;
+      img {
+        width: inherit;
+        height: inherit;
+        border-radius: 50px;
+      }
     }
+
     .user-project-heading {
       font-size: $mediumfontsize;
     }
-  }
-  .user-project-pricing {
-    display: flex;
-    justify-content: space-between;
-    font-size: $smallfontsize;
   }
 }

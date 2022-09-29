@@ -101,8 +101,7 @@ const Product = (props) => {
               </div>
               <h1 className="h1 product-info-heading">
                 {props.heading} - {props.description}
-              </h1>
-
+              </h1>{" "}
               <div className="product-info-user-name">
                 <a className="a" href={props.parenturl}>
                   {props.name}

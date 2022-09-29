@@ -35,25 +35,6 @@ const Banner = () => {
               <input className="border" placeholder="Search works..." />
             </form>
           </div>
-          {/* <div className="popular-tags">
-            <ul className="ul">
-              <li>
-                <p className="p">Popular:</p>
-              </li>
-              <li>
-                <a className="a button-styling-2">Web Developemt</a>
-              </li>
-              <li>
-                <a className="a button-styling-2">App Development</a>
-              </li>
-              <li>
-                <a className="a button-styling-2">Graphic Design</a>
-              </li>
-              <li>
-                <a className="a button-styling-2">Digital Marketing</a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </div>

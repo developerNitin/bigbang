@@ -6,39 +6,11 @@ import Sampleimg4 from "../assets/sample-img-4.jpg";
 import Sampleimg5 from "../assets/sample-img-5.jpg";
 import Sampleimg6 from "../assets/sample-img-6.jpg";
 
+import Userdata from "../../../../userdata";
+
 export default function FeaturedProjects() {
-  const FeaturedProjects = [
-    {
-      img: Sampleimg2,
-      heading: "Bigbang",
-      title: "Creative website",
-      pricing: "200$",
-    },
-    {
-      img: Sampleimg3,
-      heading: "hello",
-      title: "Creative website",
-      pricing: "200$",
-    },
-    {
-      img: Sampleimg4,
-      heading: "Bigboss",
-      title: "Creative website",
-      pricing: "200$",
-    },
-    {
-      img: Sampleimg5,
-      heading: "Bigboss",
-      title: "Creative website",
-      pricing: "200$",
-    },
-    {
-      img: Sampleimg6,
-      heading: "Bigboss",
-      title: "Creative website",
-      pricing: "200$",
-    },
-  ];
+  const FeaturedProjects = Userdata.map(({ products }) => products).flat();
+
   return (
     <div className="page featured-projects">
       <div className="user-works">
@@ -49,25 +21,21 @@ export default function FeaturedProjects() {
           </a>
         </div>
         <div className="user-project-wrap">
-          {FeaturedProjects.map((i, idx) => {
-            return (
-              <div key={idx} className="user-project border">
-                <a>
-                  <div className="user-project-image-wrap">
-                    <img className="user-project-img" src={i.img} />
+          {FeaturedProjects.slice(9, 14).map((i, idx) => (
+            <div key={idx} className="user-project">
+              <a className="a" href={i.url}>
+                <div className="user-project-image-wrap">
+                  <img className="user-project-img" src={i.image[0]} />
+                </div>
+                <div className="user-project-detail">
+                  <div>
+                    <img src={i.image[0]} />
                   </div>
-                  <div className="user-project-detail">
-                    <h1 className="h1 user-project-heading">{i.heading}</h1>
-                    <p className="p user-project-title">{i.title}</p>
-                    <div className="user-project-pricing">
-                      <span>Pricing:</span>
-                      <span>{i.pricing}</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            );
-          })}
+                  <h1 className="h1 user-project-heading">{i.heading}</h1>
+                </div>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
