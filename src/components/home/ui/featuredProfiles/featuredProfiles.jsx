@@ -75,7 +75,7 @@ export default function Featured() {
                 </div>
                 <div className="suggested-profiles-user-profile">
                   <div className="suggested-profiles-user-profile-image">
-                    <img src={i.image[2]} />
+                    <img src={i.profileimage} />
                   </div>
                   <div>
                     <h3 className="h1">{i.title}</h3>

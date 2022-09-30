@@ -67,11 +67,12 @@ $imagesSpacing: 5px;
   }
 
   button {
-    border: 0;
     padding: 0;
     margin: 0;
+    border: 3px solid transparent;
     display: flex;
     background-color: transparent;
+    border-radius: 3px;
     width: 100%;
   }
   img {

@@ -1,68 +1,24 @@
 import "./style/product.css";
+
 import Suggestion from "../../UI/suggestion/suggestion";
-
-import Sampleimg1 from "./assets/sample-img-1.jpg";
-import Sampleimg2 from "./assets/sample-img-2.jpg";
-import Sampleimg3 from "./assets/sample-img-3.jpg";
-import Sampleimg4 from "./assets/sample-img-4.jpg";
-import Sampleimg5 from "./assets/sample-img-5.jpg";
-import Sampleimg6 from "./assets/sample-img-6.jpg";
-
 import Review from "../../UI/review/review";
 
 import { AiFillStar } from "react-icons/ai";
 import { useState } from "react";
 
 const Product = (props) => {
-  const style1 = { border: "3px solid #191919", borderRadius: "3px" };
-  const style2 = { border: "3px solid transparent", borderRadius: "3px" };
+  //array
+  const sampleimg = props.image.map((i) => i);
+  const nullarray = props.image.map(() => null);
 
-  const [images, setImages] = useState([
-    Sampleimg1,
-    null,
-    null,
-    null,
-    null,
-    null,
-  ]);
-  const [style, setStyle] = useState([
-    style1,
-    style2,
-    style2,
-    style2,
-    style2,
-    style2,
-  ]);
+  //use state
+  const [images, setImages] = useState([sampleimg[0], ...nullarray]);
+  const [borderStyle, setBorderStyle] = useState(0);
 
-  function onClickImageHandler(props) {
-    switch (props) {
-      case 0:
-        setImages([Sampleimg1, null, null, null, null, null]);
-        setStyle([style1, style2, style2, style2, style2, style2]);
-        break;
-      case 1:
-        setImages([null, Sampleimg2, null, null, null, null]);
-        setStyle([style2, style1, style2, style2, style2, style2]);
-        break;
-      case 2:
-        setImages([null, null, Sampleimg3, null, null, null]);
-        setStyle([style2, style2, style1, style2, style2, style2]);
-        break;
-      case 3:
-        setImages([null, null, null, Sampleimg4, null, null]);
-        setStyle([style2, style2, style2, style1, style2, style2]);
-        break;
-      case 4:
-        setImages([null, null, null, null, Sampleimg5, null]);
-        setStyle([style2, style2, style2, style2, style1, style2]);
-        break;
-      case 5:
-        setImages([null, null, null, null, null, Sampleimg6]);
-        setStyle([style2, style2, style2, style2, style2, style1]);
-        break;
-      default:
-        break;
-    }
+  //button on click
+  function OnClickImageHandler(props) {
+    setImages([sampleimg[props], ...nullarray]);
+    setBorderStyle(props);
   }
 
   return (
@@ -81,8 +37,10 @@ const Product = (props) => {
               return (
                 <div key={idx}>
                   <button
-                    style={style[idx]}
-                    onClick={() => onClickImageHandler(idx)}
+                    style={
+                      borderStyle === idx ? { borderColor: "#191919" } : null
+                    }
+                    onClick={() => OnClickImageHandler(idx)}
                   >
                     <img src={i} />
                   </button>
@@ -132,7 +90,7 @@ const Product = (props) => {
               <span className="product-owner-detail-owner-label">owner</span>
               <div className="product-ower-detail-img-nd-heading">
                 <a className="a" href={props.parenturl}>
-                  <img className="img-icon-border" src={Sampleimg5} />
+                  <img className="img-icon-border" src={props.profileimage} />
                 </a>
                 <div>
                   <a className="a" href={props.parenturl}>

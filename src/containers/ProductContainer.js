@@ -12,6 +12,7 @@ export default function ProductContainer({ i }) {
       parenturl={i.parenturl}
       parentindex={i.parentindex}
       index={i.index}
+      profileimage={i.profileimage}
     />
   );
 }

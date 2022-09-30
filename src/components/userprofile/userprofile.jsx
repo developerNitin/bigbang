@@ -1,7 +1,4 @@
 import "./style/userprofile.css";
-
-import Sampleimg1 from "./assets/sample-img-5.jpg";
-import Sampleimg2 from "./assets/sample-img-4.jpg";
 import Review from "../../UI/review/review";
 
 
@@ -16,7 +13,7 @@ const Userprofile = (props) => (
       <div className="user-detail">
         <div className="user-detail-wrap">
           <div className="user-img">
-            <img src={Sampleimg1} />
+            <img src={props.profileimage} />
           </div>
           <div className="user-detail-wrap-second-child">
             <h2 className="h1">{props.title} | logo designer</h2>
@@ -44,7 +41,7 @@ const Userprofile = (props) => (
                   <div className="user-project-image-wrap">
                     <img
                       className="image-ani user-project-img"
-                      src={Sampleimg2}
+                      src={i.image[0]}
                     />
                   </div>
                 </a>

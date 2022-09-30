@@ -11,6 +11,7 @@ export default function UserProfileContainer({ i }) {
       location={i.location}
       description={i.description}
       products={i.products}
+      profileimage = {i.profileimage}
     />
   );
 }

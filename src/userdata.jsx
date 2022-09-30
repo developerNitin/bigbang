@@ -8,6 +8,7 @@ import image6 from "./assets/sample-img-6.jpg";
 const productdata1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Angela Su",
   url: "angelasu/" + i,
+  profileimage: image5,
   parenturl: "/angelasu",
   index: i,
   parentindex: 0,
@@ -24,6 +25,7 @@ const productdata1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 const productdata2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Super Su",
   url: "supersu/" + i,
+  profileimage: image5,
   parenturl: "/supersu",
   index: i,
   parentindex: 1,
@@ -70,6 +72,7 @@ const productdata4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 const Userdata = [
   {
     name: "Angela Su",
+    profileimage: image5,
     url: "angelasu",
     title: "Digital Marketing",
     website: "AngelaSu.com",
@@ -96,6 +99,7 @@ const Userdata = [
   },
   {
     name: "Super Su",
+    profileimage: image5,
     url: "supersu",
     title: "Graphic designer",
     website: "AngelaSu.com",
@@ -123,6 +127,7 @@ const Userdata = [
 
   {
     name: "Infi Su",
+    profileimage: image5,
     url: "infisu",
     title: "Product Designer",
     website: "AngelaSu.com",
@@ -149,6 +154,7 @@ const Userdata = [
   },
   {
     name: "Peanut Su",
+    profileimage: image5,
     url: "peanutsu",
     title: "Web developer",
     website: "AngelaSu.com",
