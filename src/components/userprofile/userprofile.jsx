@@ -1,7 +1,6 @@
 import "./style/userprofile.css";
 import Review from "../../UI/review/review";
 
-
 const Userprofile = (props) => (
   <div className="user-profile">
     <div className="cover-img">
@@ -29,22 +28,33 @@ const Userprofile = (props) => (
       <div className="user-works">
         <div className="user-works-heading">
           <h1 className="h1">
-            PROJECTS<span>169</span>
+            PROJECTS<span>{props.products.length}</span>
           </h1>
         </div>
         <hr className="hr" />
         <div className="user-project-wrap">
           {props.products.map((i, idx) => {
             return (
-              <div key={idx} className="user-project border">
-                <a href={i.url}>
+              <div key={idx} className="user-project border image-ani">
+                <a className="a" href={i.url}>
                   <div className="user-project-image-wrap">
-                    <img
-                      className="image-ani user-project-img"
-                      src={i.image[0]}
-                    />
+                    <img className=" user-project-img" src={i.image[0]} />
                   </div>
                 </a>
+                <div className="user-project-info">
+                  <div>
+                    <p className="p">
+                      <a className="a" href={i.url}>
+                        {i.heading}
+                      </a>
+                    </p>
+                    <p className="p">
+                      <a className="a" href={i.parenturl}>
+                        {i.name}
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             );
           })}

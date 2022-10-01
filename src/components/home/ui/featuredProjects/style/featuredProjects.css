@@ -42,7 +42,52 @@
           flex-direction: column;
   margin-right: 20px;
   overflow: hidden;
-  cursor: pointer;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project a {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 30vh;
+  width: 100%;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-info div {
+  margin-bottom: 0;
+  padding-top: 20px;
+  position: relative;
+  z-index: 100;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 81%);
+  display: none;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-info div p {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-info div p a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project:hover .user-project-info div {
+  display: block;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-image-wrap {
@@ -56,16 +101,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: -30vh;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-img {
-  height: 35vh;
+  height: 30vh;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
-}
-
-.featured-projects .user-works .user-project-wrap .user-project:hover .user-project-img {
-  scale: 105%;
+  cursor: pointer;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project h1 {
@@ -74,6 +117,12 @@
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-detail {
   padding: 7px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project .user-project-detail a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,6 +141,7 @@
   width: inherit;
   height: inherit;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading {

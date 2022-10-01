@@ -25,18 +25,19 @@
 .a {
   color: #010101;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .a:hover {
-  color: #666666;
+  text-decoration: underline;
 }
 
-.image-ani {
+.image-ani img {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-.image-ani:hover {
+.image-ani:hover img {
   scale: 105%;
 }
 

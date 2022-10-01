@@ -138,19 +138,66 @@ $xxxxlargefontsize: 36px;
 }
 
 .user-profile .user-works .user-project-wrap .user-project {
-  display: flex;
   background-color: white;
   flex-direction: column;
   margin-right: 30px;
   overflow: hidden;
   border-radius: 5px;
-  cursor: pointer;
+  .user-project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 30vh;
+    width: 100%;
+    div {
+      margin-bottom: 0;
+      padding-top: 20px;
+      position: relative;
+      z-index: 100;
+      background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.6) 81%
+      );
+      display: none;
+      :nth-child(1) {
+        margin-bottom: 3px;
+        a {
+          font-weight: bold;
+          color: $colorwhite;
+          font-size: $mediumfontsize;
+        }
+      }
+      :nth-child(2) {
+        margin-bottom: 13px;
+        a {
+          color: $colorwhite;
+          font-size: $smallfontsize;
+        }
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    .user-project-info div {
+      display: block;
+    }
+  }
+
   .user-project-image-wrap {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30vh;
+    cursor: pointer;
     img {
       width: 100%;
-      margin-top: -12%;
-      margin-bottom: -12%;
     }
   }
   h1 {

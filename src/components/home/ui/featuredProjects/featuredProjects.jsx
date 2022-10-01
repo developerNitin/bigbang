@@ -22,18 +22,30 @@ export default function FeaturedProjects() {
         </div>
         <div className="user-project-wrap">
           {FeaturedProjects.slice(9, 14).map((i, idx) => (
-            <div key={idx} className="user-project">
-              <a className="a" href={i.url}>
-                <div className="user-project-image-wrap">
+            <div key={idx} className="user-project image-ani">
+              <a className="" href={i.url}>
+                <div className="user-project-image-wrap ">
                   <img className="user-project-img" src={i.image[0]} />
                 </div>
-                <div className="user-project-detail">
+              </a>
+              <div className="user-project-info">
+                <div>
+                  <p className="p">
+                    <a className="a" href={i.url}>
+                      {i.heading}
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="user-project-detail">
+                <a className="a" href={i.parenturl}>
                   <div>
                     <img src={i.image[0]} />
                   </div>
-                  <h1 className="h1 user-project-heading">{i.heading}</h1>
-                </div>
-              </a>
+                  <h1 className="h1 user-project-heading">{i.name}</h1>
+                </a>
+              </div>
             </div>
           ))}
         </div>

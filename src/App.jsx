@@ -1,4 +1,4 @@
-import "./style/Global.css";
+import "./globalStyling/Global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./UI/header/header";
 import Footer from "./UI/footer/footer";

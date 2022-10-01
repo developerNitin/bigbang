@@ -47,16 +47,18 @@ $xxxxlargefontsize: 36px;
 .a {
   color: $colorblack;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .a:hover {
-  color: $colorgrey;
+  text-decoration: underline;
 }
 
 .image-ani {
-  transition: all ease 0.3s;
+img {
+  transition: all ease 0.3s;}
   &:hover {
-    scale: 105%;
+   img {scale: 105%;}
   }
 }
 

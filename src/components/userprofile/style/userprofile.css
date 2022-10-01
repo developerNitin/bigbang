@@ -154,9 +154,6 @@
 }
 
 .user-profile .user-works .user-project-wrap .user-project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -165,17 +162,82 @@
   margin-right: 30px;
   overflow: hidden;
   border-radius: 5px;
-  cursor: pointer;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 30vh;
+  width: 100%;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div {
+  margin-bottom: 0;
+  padding-top: 20px;
+  position: relative;
+  z-index: 100;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 81%);
+  display: none;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div :nth-child(1) {
+  margin-bottom: 3px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div :nth-child(1) a {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div :nth-child(2) {
+  margin-bottom: 13px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div :nth-child(2) a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project .user-project-info div p {
+  margin-left: 10px;
+}
+
+.user-profile .user-works .user-project-wrap .user-project:hover .user-project-info div {
+  display: block;
 }
 
 .user-profile .user-works .user-project-wrap .user-project .user-project-image-wrap {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -30vh;
+  cursor: pointer;
 }
 
 .user-profile .user-works .user-project-wrap .user-project .user-project-image-wrap img {
   width: 100%;
-  margin-top: -12%;
-  margin-bottom: -12%;
 }
 
 .user-profile .user-works .user-project-wrap .user-project h1 {
