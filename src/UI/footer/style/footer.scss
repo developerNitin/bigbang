@@ -27,26 +27,23 @@ $xxxxlargefontsize: 36px;
   padding-top: 60px;
   padding-bottom: 40px;
   .footer-top {
-    display: flex;
     .footer-about-us {
-      width: 25%;
-      margin-right: 50px;
-      p {
-        font-size: $mediumfontsize;
-        line-height: 25px;
-      }
+    flex-basis: 30%;
       h1 {
         font-size: $xlargefontsize;
         margin-bottom: 20px;
         font-style: italic;
       }
+      p {
+        font-size: $mediumfontsize;
+        line-height: 25px;
+      }
     }
   }
   .footer-link {
+    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    padding-bottom: 40px;
     .footer-link-wrap {
       display: flex;
       flex-direction: column;
@@ -69,5 +66,10 @@ $xxxxlargefontsize: 36px;
   // justify-content: flex-end;
   align-items: center;
   padding-top: 40px;
-  
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 750px) {
 }

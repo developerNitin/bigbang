@@ -105,7 +105,7 @@
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-img {
-  height: 30vh;
+  width: 100%;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   cursor: pointer;

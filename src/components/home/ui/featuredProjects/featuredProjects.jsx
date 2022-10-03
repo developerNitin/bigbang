@@ -22,7 +22,7 @@ export default function FeaturedProjects() {
         </div>
         <div className="user-project-wrap">
           {FeaturedProjects.slice(9, 14).map((i, idx) => (
-            <div key={idx} className="user-project image-ani">
+            <div key={idx} className="user-project">
               <a className="" href={i.url}>
                 <div className="user-project-image-wrap ">
                   <img className="user-project-img" src={i.image[0]} />

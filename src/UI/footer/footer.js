@@ -35,19 +35,21 @@ export default function Footer() {
       <hr className="hr" />
       <div className="footer-wrap">
         <div className="page footer-top">
-          <div className="footer-about-us">
-            <h1 className="h1">BIGBANG</h1>
-            <p className="p">
-              Bigbang is the world’s leading
-              <br /> community for creatives to share, grow, and get hired.
-            </p>
-          </div>
           <div className="footer-link">
+            <div className="footer-about-us">
+              <h1 className="h1">BIGBANG</h1>
+              <p className="p">
+                Bigbang is the world’s leading community for creatives to share,
+                grow, and get hired.
+              </p>
+            </div>
             {footerdata.map((i, idx) => (
               <div className="footer-link-wrap" key={idx}>
                 <h1 className="h1">{i.title}</h1>
                 {i.item.map((i, idx) => (
-                  <a className="a" key={idx}>{i}</a>
+                  <a className="a" key={idx}>
+                    {i}
+                  </a>
                 ))}
               </div>
             ))}

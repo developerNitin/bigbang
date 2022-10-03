@@ -70,21 +70,21 @@ export default function Featured() {
           {Userdata.map((i, idx) => (
             <div key={idx} className="border suggested-profiles-wrap-data">
               <a className="a" href={i.url}>
-                <div className="suggested-profiles-img-wrap">
+                <div className="suggested-profiles-img-wrap image-ani">
                   <img src={i.image[0]} />
                 </div>
-                <div className="suggested-profiles-user-profile">
-                  <div className="suggested-profiles-user-profile-image">
-                    <img src={i.profileimage} />
-                  </div>
-                  <div>
-                    <h3 className="h1">{i.title}</h3>
-                    <p className="p">
-                      by <span>{i.name}</span>
-                    </p>
-                  </div>
-                </div>
               </a>
+              <div className="suggested-profiles-user-profile">
+                <div className="suggested-profiles-user-profile-image">
+                  <a href={i.url}><img src={i.profileimage} /></a>
+                </div>
+                <div>
+                  <h3 className="h1">{i.title}</h3>
+                  <p className="p">
+                    <a className="a" href={i.url}>by {i.name}</a>
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

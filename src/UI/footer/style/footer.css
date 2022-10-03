@@ -11,20 +11,9 @@
   padding-bottom: 40px;
 }
 
-.footer .footer-wrap .footer-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .footer .footer-wrap .footer-top .footer-about-us {
-  width: 25%;
-  margin-right: 50px;
-}
-
-.footer .footer-wrap .footer-top .footer-about-us p {
-  font-size: 16px;
-  line-height: 25px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .footer .footer-wrap .footer-top .footer-about-us h1 {
@@ -33,17 +22,19 @@
   font-style: italic;
 }
 
+.footer .footer-wrap .footer-top .footer-about-us p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .footer .footer-wrap .footer-link {
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding-bottom: 40px;
 }
 
 .footer .footer-wrap .footer-link .footer-link-wrap {

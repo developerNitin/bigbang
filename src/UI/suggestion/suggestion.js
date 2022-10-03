@@ -8,7 +8,7 @@ import Userdata from "../../userdata";
 export default function suggestion({ parentindex, index }) {
   return (
     <div className="suggested-project-parent">
-      <div className="suggested-project">
+      <div className="page suggested-project">
         <div className="suggested-project-scroll-icons-1">
           <button className="button-styling suggested-project-scroll-icons-1-button">
             <MdKeyboardArrowLeft />
@@ -20,15 +20,15 @@ export default function suggestion({ parentindex, index }) {
             .slice(0, 8)
             .map((i, idx) => (
               <div key={idx} className="suggested-project-img-wrap">
-                <a className="a image-ani" href={"/" + i.url}>
-                <div className="suggested-project-img-wrap-wrap">
-                  <img className="image-ani" src={i.image[0]} />
+                <a className="a" href={"/" + i.url}>
+                  <div className="suggested-project-img-wrap-wrap">
+                    <img className="image-ani" src={i.image[0]} />
                   </div>
                 </a>
                 <div className="user-project-info">
                   <div>
                     <p className="p">
-                      <a className="a" href={"/" +i.url}>
+                      <a className="a" href={"/" + i.url}>
                         {i.heading}
                       </a>
                     </p>

@@ -18,11 +18,8 @@ $xxxxlargefontsize: 36px;
 }
 
 .suggested-project-parent .suggested-project {
-  //  padding-top: 20px;
-  // background-color: $colorwhite;
   display: flex;
   align-items: center;
-  overflow: hidden;
   z-index: 0;
 }
 
@@ -30,27 +27,28 @@ $xxxxlargefontsize: 36px;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+      display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+    grid-template-columns: repeat(9999, 1fr);
   &::-webkit-scrollbar {
     display: none;
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
   .suggested-project-img-wrap-wrap {
-    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -30vh;
+    height: 30vh;
   }
   img {
-    width: 100%;
+  height: inherit;
   }
   .suggested-project-img-wrap {
-    display: inline-block;
-    width: calc(25% - 15px);
-    overflow: hidden;
-    margin-right: 20px;
+
     border-radius: 3px;
+    margin-right: 20px;
     vertical-align: bottom;
     .user-project-info {
       display: flex;
@@ -58,6 +56,7 @@ $xxxxlargefontsize: 36px;
       justify-content: flex-end;
       height: 30vh;
       width: 100%;
+      margin-top: -30vh;
       div {
         margin-bottom: 0;
         padding-top: 20px;

@@ -9,7 +9,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   z-index: 0;
 }
 
@@ -17,6 +16,11 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  display: inline-grid;
+  display: -ms-inline-grid;
+  display: -moz-inline-grid;
+  -ms-grid-columns: (1fr)[9999];
+      grid-template-columns: repeat(9999, 1fr);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -26,7 +30,6 @@
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap-wrap {
-  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,19 +39,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -30vh;
+  height: 30vh;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap img {
-  width: 100%;
+  height: inherit;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap {
-  display: inline-block;
-  width: calc(25% - 15px);
-  overflow: hidden;
-  margin-right: 20px;
   border-radius: 3px;
+  margin-right: 20px;
   vertical-align: bottom;
 }
 
@@ -65,6 +65,7 @@
           justify-content: flex-end;
   height: 30vh;
   width: 100%;
+  margin-top: -30vh;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div {

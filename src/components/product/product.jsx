@@ -22,9 +22,9 @@ const Product = (props) => {
   }
 
   return (
-    <div className="page product-page">
+    <div className="product-page">
       <div className="product-page-wrap">
-        <div className="product-page-images">
+        <div className="page product-page-images">
           <div className="product-page-images-wrap">
             <div>
               {images.map((i, idx) => {
@@ -49,8 +49,8 @@ const Product = (props) => {
             })}
           </div>
         </div>
-        <div className="product-info">
-          <div className="product-info-wrap">
+        <div className=" product-info">
+          <div className="page product-info-wrap">
             <div className="product-info-wrap-first-child">
               <div className="product-page-cart-links">
                 <button className="button-styling product-page-cart-links-wrap">
@@ -83,7 +83,7 @@ const Product = (props) => {
           </div>
         </div>
 
-        <div className="product-owner-detail">
+        <div className="page product-owner-detail">
           <Review />
           <div className="product-owner-detail-wrap">
             <div className="border product-owner-detail-wrap-first-child">

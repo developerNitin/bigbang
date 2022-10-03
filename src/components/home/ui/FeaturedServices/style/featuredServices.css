@@ -67,6 +67,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  height: 60vh;
 }
 
 .featured-services
@@ -144,9 +145,8 @@
 .featured-services
 .featured-services-wrap
 .featured-services-wrap-second-child .featured-services-wrap-second-child-second-child .featured-services-wrap-second-child-second-child-second-child img {
-  margin-top: -12%;
-  margin-bottom: -12%;
-  width: 100%;
+  width: inherit;
+  height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;

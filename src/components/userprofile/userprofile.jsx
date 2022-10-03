@@ -35,7 +35,7 @@ const Userprofile = (props) => (
         <div className="user-project-wrap">
           {props.products.map((i, idx) => {
             return (
-              <div key={idx} className="user-project border image-ani">
+              <div key={idx} className="user-project border">
                 <a className="a" href={i.url}>
                   <div className="user-project-image-wrap">
                     <img className=" user-project-img" src={i.image[0]} />
