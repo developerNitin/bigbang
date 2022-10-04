@@ -16,13 +16,10 @@ $xxxlargefontsize: 30px;
 $xxxxlargefontsize: 36px;
 
 .review {
-  display: flex;
-  flex: 1;
   background-color: $colorwhite;
 }
 
 .review .review-wrap {
-flex: 1;
   .post-a-comment {
     padding: 50px;
     display: flex;
@@ -40,7 +37,7 @@ flex: 1;
         flex: 1;
         font-size: $mediumfontsize;
         padding: 10px;
-        height: 100px;
+        min-height: 100px;
         // border-color: $colorgrey;
       }
     }
@@ -101,3 +98,8 @@ flex: 1;
     display: none;
   }
 }
+
+@media (max-width: 750px) {
+
+}
+
