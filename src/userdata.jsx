@@ -68,6 +68,21 @@ const productdata4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   date: "9 sept 2022",
   image: [image2, image1, image3, image4, image5, image6],
 }));
+const productdata5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
+  name: "Engery Su",
+  url: "engerysu/" + i,
+  parenturl: "/engerysu",
+  index: i,
+  parentindex: 1,
+  heading: "Bigbang4",
+  location: "California, USA",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+  language: "English, Hindi",
+  pricing: "200$",
+  date: "9 sept 2022",
+  image: [image2, image1, image3, image4, image5, image6],
+}));
 
 const Userdata = [
   {
@@ -178,6 +193,33 @@ const Userdata = [
     coverImg: "assets/coverimg/coverImg.jpeg",
     image: [image4, image2, image3, image1, image5, image6],
     products: productdata4,
+  },
+    {
+    name: "Engery Su",
+    profileimage: image5,
+    url: "engerysu",
+    title: "Web developer",
+    website: "AngelaSu.com",
+    since: "2022",
+    location: "California, USA",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel massa sed dolor pulvinar varius ut at velit.",
+    language: "English, Hindi",
+    links: {
+      facebook: "facebook.com",
+      instagram: "instagram.com",
+      twitter: "twitter.com",
+    },
+    skills: {
+      1: "Digital marketing",
+      2: "Illustration",
+      3: "Web development",
+    },
+    education: "B.Sc. - Bs Commerce",
+    certification: "Certified In Commerce Industry",
+    coverImg: "assets/coverimg/coverImg.jpeg",
+    image: [image6, image2, image3, image1, image5, image4],
+    products: productdata5,
   },
 ];
 

@@ -2,10 +2,6 @@
   background-color: #f9f9f9;
 }
 
-.footer hr:nth-child(2) {
-  margin: 0 100px;
-}
-
 .footer .footer-wrap {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -61,7 +57,7 @@
   margin-bottom: 20px;
 }
 
-.footer .footer-bottom {
+.footer .footer-bottom div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

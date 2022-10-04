@@ -1,11 +1,6 @@
 import "./style/featuredProjects.css";
-
-import Sampleimg2 from "../assets/sample-img-2.jpg";
-import Sampleimg3 from "../assets/sample-img-3.jpg";
-import Sampleimg4 from "../assets/sample-img-4.jpg";
-import Sampleimg5 from "../assets/sample-img-5.jpg";
-import Sampleimg6 from "../assets/sample-img-6.jpg";
-
+import { MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import Userdata from "../../../../userdata";
 
 export default function FeaturedProjects() {
@@ -20,34 +15,45 @@ export default function FeaturedProjects() {
             <span>EXPLORE MORE</span>
           </a>
         </div>
-        <div className="user-project-wrap">
-          {FeaturedProjects.slice(9, 14).map((i, idx) => (
-            <div key={idx} className="user-project">
-              <a className="" href={i.url}>
-                <div className="user-project-image-wrap ">
-                  <img className="user-project-img" src={i.image[0]} />
-                </div>
-              </a>
-              <div className="user-project-info">
-                <div>
-                  <p className="p">
-                    <a className="a" href={i.url}>
-                      {i.heading}
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="user-project-detail">
-                <a className="a" href={i.parenturl}>
-                  <div>
-                    <img src={i.image[0]} />
+        <div className="featured-projects-body">
+          <div className="suggested-project-scroll-icons-1">
+            <button className="button-styling suggested-project-scroll-icons-1-button">
+              <MdKeyboardArrowLeft />
+            </button>
+          </div>
+          <div className="user-project-wrap">
+            {FeaturedProjects.slice(9, 14).map((i, idx) => (
+              <div key={idx} className="user-project">
+                <a className="" href={i.url}>
+                  <div className="user-project-image-wrap">
+                    <img className="user-project-img" src={i.image[0]} />
                   </div>
-                  <h1 className="h1 user-project-heading">{i.name}</h1>
                 </a>
+                <div className="user-project-info">
+                  <div>
+                    <p className="p">
+                      <a className="a" href={i.url}>
+                        {i.heading}
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div className="user-project-detail">
+                  <a className="a" href={i.parenturl}>
+                    <div>
+                      <img src={i.image[0]} />
+                    </div>
+                    <h1 className="h1 user-project-heading">{i.name}</h1>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="suggested-project-scroll-icons-2">
+            <button className="button-styling suggested-project-scroll-icons-2-button">
+              <MdKeyboardArrowRight />
+            </button>
+          </div>
         </div>
       </div>
     </div>

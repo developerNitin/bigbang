@@ -132,7 +132,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50px;
-  margin-top: -22.5px;
+  margin-top: -42.5px;
   margin-left: -22.5px;
   z-index: 3;
 }
@@ -141,5 +141,29 @@
 .featured-profiles .suggested-profiles .suggested-profiles-scroll-icons-2 button svg {
   height: 25px;
   width: 25px;
+}
+
+@media (min-width: 1500px) {
+  .featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data {
+    width: calc(20% - 18px);
+  }
+}
+
+@media (max-width: 1050px) {
+  .featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data {
+    width: calc(33.33% - 15.5px);
+  }
+}
+
+@media (max-width: 800px) {
+  .featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 450px) {
+  .featured-profiles .suggested-profiles .suggested-profiles-wrap .suggested-profiles-wrap-data {
+    width: calc(100% - 2px);
+  }
 }
 /*# sourceMappingURL=featuredProfiles.css.map */

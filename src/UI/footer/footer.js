@@ -55,10 +55,12 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <hr className="hr" />
         <div className="page footer-bottom">
-          <p className="p">BIGBANG</p>
-          <p className="p">© 2022 BIGBANG. All rights reserved.</p>
+          <hr className="hr" />
+          <div>
+            <p className="p">BIGBANG</p>
+            <p className="p">© 2022 BIGBANG. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </div>

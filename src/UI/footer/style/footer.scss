@@ -17,10 +17,6 @@ $xxxxlargefontsize: 36px;
 
 .footer {
   background-color: $lightbluebgcolor;
-  hr:nth-child(2) {
-    // border-color: $colorgrey;
-    margin: 0 100px;
-  }
 }
 
 .footer .footer-wrap {
@@ -63,11 +59,13 @@ $xxxxlargefontsize: 36px;
 }
 
 .footer .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  // justify-content: flex-end;
-  align-items: center;
+  div {
+    display: flex;
+    justify-content: space-between;
+    // justify-content: flex-end;
+    align-items: center;
   padding-top: 40px;
+  }
 }
 
 @media (max-width: 1200px) {

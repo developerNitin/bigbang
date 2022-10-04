@@ -16,11 +16,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  display: inline-grid;
   display: -ms-inline-grid;
   display: -moz-inline-grid;
-  -ms-grid-columns: (1fr)[9999];
-      grid-template-columns: repeat(9999, 1fr);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -30,26 +27,22 @@
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 30vh;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap img {
-  height: inherit;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap {
-  border-radius: 3px;
-  margin-right: 20px;
+  display: inline-block;
+  width: calc(25% - 15px);
   vertical-align: bottom;
+  margin-right: 20px;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info {
@@ -135,5 +128,47 @@
 .suggested-project-parent .suggested-project .suggested-project-scroll-icons-2 button svg {
   height: 25px;
   width: 25px;
+}
+
+@media (min-width: 1500px) {
+  .suggested-project-parent
+.suggested-project
+.suggested-project-wrap
+.suggested-project-img-wrap {
+    width: calc(20% - 16px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .suggested-project-img-wrap .user-project-info div {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .suggested-project-parent
+.suggested-project
+.suggested-project-wrap
+.suggested-project-img-wrap {
+    width: calc(33.33% - 13.2px);
+  }
+}
+
+@media (max-width: 800px) {
+  .suggested-project-parent
+.suggested-project
+.suggested-project-wrap
+.suggested-project-img-wrap {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 450px) {
+  .suggested-project-parent
+.suggested-project
+.suggested-project-wrap
+.suggested-project-img-wrap {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=suggestion.css.map */

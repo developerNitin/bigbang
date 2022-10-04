@@ -21,7 +21,6 @@ const Banner = () => {
             </h1>
           </div>
           <div className="banner-text">
-            {/* <span><MdOutlineDoubleArrow /></span> */}
             <p className="line-height-24px p">
               Millions of talents and agencies around the world showcase their
               work on Bigbang.

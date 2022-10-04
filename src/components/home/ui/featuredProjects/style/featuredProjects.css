@@ -4,6 +4,15 @@
   padding-bottom: 100px;
 }
 
+.featured-projects .featured-projects-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .featured-projects .user-works .user-works-heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,29 +34,60 @@
 }
 
 .featured-projects .user-works .user-project-wrap {
-  display: -ms-grid;
-  display: grid;
-  margin-right: -20px;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.featured-projects .user-works .user-project-wrap .user-project {
+.featured-projects .user-works .user-project-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-projects .suggested-project-scroll-icons-1,
+.featured-projects .suggested-project-scroll-icons-2 {
+  margin-top: -25px;
+}
+
+.featured-projects .suggested-project-scroll-icons-1 button,
+.featured-projects .suggested-project-scroll-icons-2 button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 20px;
-  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  margin-top: -20px;
+  margin-left: -20px;
+  border: 0;
+  z-index: 3;
 }
 
-.featured-projects .user-works .user-project-wrap .user-project a {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.featured-projects .suggested-project-scroll-icons-1 button svg,
+.featured-projects .suggested-project-scroll-icons-2 button svg {
+  height: 25px;
+  width: 25px;
+}
+
+.featured-projects .user-works .user-project-wrap .user-project {
+  height: 30vh;
+  display: inline-block;
+  margin-right: 20px;
+  width: calc(25% - 15px);
+}
+
+.featured-projects .user-works .user-project-wrap .user-project:last-child {
+  margin-right: 0;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-info {
@@ -63,6 +103,7 @@
           justify-content: flex-end;
   height: 30vh;
   width: 100%;
+  margin-top: -30vh;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-info div {
@@ -91,23 +132,14 @@
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-image-wrap {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: -30vh;
+  height: 30vh;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-img {
   width: 100%;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 
@@ -146,5 +178,35 @@
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-detail .user-project-heading {
   font-size: 16px;
+}
+
+@media (min-width: 1500px) {
+  .featured-projects .user-works .user-project-wrap .user-project {
+    width: calc(20% - 16px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .featured-projects .user-project-info div {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1050px) {
+  .featured-projects .user-works .user-project-wrap .user-project {
+    width: calc(33.33% - 13.2px);
+  }
+}
+
+@media (max-width: 800px) {
+  .featured-projects .user-works .user-project-wrap .user-project {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 450px) {
+  .featured-projects .user-works .user-project-wrap .user-project {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=featuredProjects.css.map */
