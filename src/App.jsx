@@ -4,7 +4,7 @@ import Header from "./ui/header/header";
 import Footer from "./ui/footer/footer";
 import React from "react";
 
-//user-data
+//userdata
 import Userdata from "./userdata";
 
 //components
