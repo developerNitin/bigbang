@@ -26,6 +26,12 @@
   display: none;
 }
 
+.suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .suggested-project-parent .suggested-project .suggested-project-wrap img {
   width: 100%;
   height: 100%;

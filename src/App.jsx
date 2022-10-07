@@ -2,6 +2,7 @@ import "./Global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./ui/header/header";
 import Footer from "./ui/footer/footer";
+import React from "react";
 
 //user-data
 import Userdata from "./userdata";
@@ -24,20 +25,20 @@ export default function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/search" element={<SearchPage />} />
             {Userdata.map((user, idx) => (
-              <>
+              <React.Fragment key={idx}>
                 {user.products.map((product, keyid) => (
                   <Route
                     path={product.url}
-                    key={keyid}
+                    key={`product-item-${keyid}`}
                     element={<Product i={product} key={keyid} />}
                   />
                 ))}
                 <Route
                   path={user.url}
-                  key={idx}
+                  key={`user-item-${idx}`}
                   element={<UserProfile i={user} key={idx} />}
                 />
-              </>
+              </React.Fragment>
             ))}
           </Routes>
         </Suspense>

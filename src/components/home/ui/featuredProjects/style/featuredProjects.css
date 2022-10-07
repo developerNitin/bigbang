@@ -91,6 +91,9 @@
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-image-wrap {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project .user-project-img {

@@ -29,9 +29,6 @@ export default function Header() {
       links: "",
     },
   ];
-
-  // console.log(navlinks[0].name);
-
   return (
     <header className="header">
       <div className="navbar">
@@ -41,7 +38,6 @@ export default function Header() {
               <NavLink to="/">BigBang</NavLink>
             </li>
             {navlinks.map((i, idx) => {
-              console.log(i);
               return (
                 <li key={idx}>
                   <NavLink
