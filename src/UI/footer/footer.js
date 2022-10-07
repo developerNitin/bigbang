@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./style/footer.css";
 
 export default function Footer() {
@@ -47,9 +48,9 @@ export default function Footer() {
               <div className="footer-link-wrap" key={idx}>
                 <h1 className="h1">{i.title}</h1>
                 {i.item.map((i, idx) => (
-                  <a className="a" key={idx}>
+                  <Link to="" className="a" key={idx}>
                     {i}
-                  </a>
+                  </Link>
                 ))}
               </div>
             ))}

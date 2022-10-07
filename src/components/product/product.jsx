@@ -1,10 +1,11 @@
 import "./style/product.css";
 
-import Suggestion from "../../UI/suggestion/suggestion";
-import Review from "../../UI/review/review";
+import Suggestion from "../../ui/suggestion/suggestion";
+import Review from "../../ui/review/review";
 
 import { AiFillStar } from "react-icons/ai";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
   //array
@@ -61,12 +62,12 @@ const Product = (props) => {
                 {props.heading} - {props.description}
               </h1>{" "}
               <div className="product-info-user-name">
-                <a className="a" href={props.parenturl}>
+                <Link className="a" to={props.parenturl}>
                   {props.name}
-                </a>
+                </Link>
               </div>
               <div className="product-review">
-                <a className="a">
+                <Link to="" className="a">
                   <span className="product-info-review-stars">
                     {[1, 2, 3, 4, 5].map((idx) => (
                       <span key={idx}>
@@ -77,7 +78,7 @@ const Product = (props) => {
                   <span>
                     4.9 {"("}30{")"}
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -89,20 +90,20 @@ const Product = (props) => {
             <div className="border product-owner-detail-wrap-first-child">
               <span className="product-owner-detail-owner-label">owner</span>
               <div className="product-ower-detail-img-nd-heading">
-                <a className="a" href={props.parenturl}>
+                <Link className="a" to={props.parenturl}>
                   <img className="img-icon-border" src={props.profileimage} />
-                </a>
+                </Link>
                 <div>
-                  <a className="a" href={props.parenturl}>
+                  <Link className="a" to={props.parenturl}>
                     <h1 className="h1">{props.name}</h1>
-                  </a>
-                  <a className="a">{props.location}</a>
+                  </Link>
+                  <Link to="" className="a">{props.location}</Link>
                 </div>
               </div>
               <div className="product-owner-detail-button-wrap">
-                <a className="button-styling product-owner-detail-button-hire-me">
+                <Link to="" className="button-styling product-owner-detail-button-hire-me">
                   HIRE US
-                </a>
+                </Link>
               </div>
             </div>
             <div className="border product-owner-detail-wrap-second-child">

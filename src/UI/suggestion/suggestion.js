@@ -4,6 +4,7 @@ import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 import Userdata from "../../userdata";
+import { Link } from "react-router-dom";
 
 export default function suggestion({ parentindex, index }) {
   return (
@@ -20,22 +21,22 @@ export default function suggestion({ parentindex, index }) {
             .slice(0, 8)
             .map((i, idx) => (
               <div key={idx} className="suggested-project-img-wrap">
-                <a className="a" href={"/" + i.url}>
+                <Link className="a" to={i.url}>
                   <div className="suggested-project-img-wrap-wrap">
                     <img className="image-ani" src={i.image[0]} />
                   </div>
-                </a>
+                </Link>
                 <div className="user-project-info">
                   <div>
                     <p className="p">
-                      <a className="a" href={"/" + i.url}>
+                      <Link className="a" to={i.url}>
                         {i.heading}
-                      </a>
+                      </Link>
                     </p>
                     <p className="p">
-                      <a className="a" href={i.parenturl}>
+                      <Link className="a" to={i.parenturl}>
                         {i.name}
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>

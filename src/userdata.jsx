@@ -7,7 +7,7 @@ import image6 from "./assets/sample-img-6.jpg";
 
 const productdata1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Angela Su",
-  url: "angelasu/" + i,
+  url: "/angelasu/" + i,
   profileimage: image5,
   parenturl: "/angelasu",
   index: i,
@@ -24,7 +24,7 @@ const productdata1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 
 const productdata2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Super Su",
-  url: "supersu/" + i,
+  url: "/supersu/" + i,
   profileimage: image5,
   parenturl: "/supersu",
   index: i,
@@ -40,7 +40,7 @@ const productdata2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 }));
 const productdata3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Infi Su",
-  url: "infisu/" + i,
+  url: "/infisu/" + i,
   parenturl: "/infisu",
   index: i,
   parentindex: 1,
@@ -55,7 +55,7 @@ const productdata3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 }));
 const productdata4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Peanut Su",
-  url: "peanutsu/" + i,
+  url: "/peanutsu/" + i,
   parenturl: "/peanutsu",
   index: i,
   parentindex: 1,
@@ -70,7 +70,7 @@ const productdata4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
 }));
 const productdata5 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => ({
   name: "Engery Su",
-  url: "engerysu/" + i,
+  url: "/engerysu/" + i,
   parenturl: "/engerysu",
   index: i,
   parentindex: 1,

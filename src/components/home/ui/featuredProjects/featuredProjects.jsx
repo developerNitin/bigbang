@@ -2,6 +2,7 @@ import "./style/featuredProjects.css";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Userdata from "../../../../userdata";
+import { Link } from "react-router-dom";
 
 export default function FeaturedProjects() {
   const FeaturedProjects = Userdata.map(({ products }) => products).flat();
@@ -11,9 +12,9 @@ export default function FeaturedProjects() {
       <div className="user-works">
         <div className="user-works-heading">
           <h1 className="h1">FEATURED PROJECTS</h1>
-          <a className="button-styling">
+          <Link to="" className="button-styling">
             <span>EXPLORE MORE</span>
-          </a>
+          </Link>
         </div>
         <div className="featured-projects-body">
           <div className="suggested-project-scroll-icons-1">
@@ -24,27 +25,27 @@ export default function FeaturedProjects() {
           <div className="user-project-wrap">
             {FeaturedProjects.slice(9, 14).map((i, idx) => (
               <div key={idx} className="user-project">
-                <a className="" href={i.url}>
+                <Link className="a" to={i.url}>
                   <div className="user-project-image-wrap">
                     <img className="user-project-img" src={i.image[0]} />
                   </div>
-                </a>
+                </Link>
                 <div className="user-project-info">
                   <div>
                     <p className="p">
-                      <a className="a" href={i.url}>
+                      <Link className="a" to={i.url}>
                         {i.heading}
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
                 <div className="user-project-detail">
-                  <a className="a" href={i.parenturl}>
+                  <Link className="a" to={i.parenturl}>
                     <div>
                       <img src={i.image[0]} />
                     </div>
                     <h1 className="h1 user-project-heading">{i.name}</h1>
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

@@ -1,5 +1,6 @@
 import "./style/userprofile.css";
-import Review from "../../UI/review/review";
+import Review from "../../ui/review/review";
+import { Link } from "react-router-dom";
 
 const Userprofile = (props) => (
   <div className="user-profile">
@@ -19,8 +20,12 @@ const Userprofile = (props) => (
             <h1 className="h1 user-name">{props.name}</h1>
           </div>
           <div className="user-detail-links">
-            <a className="button-styling follow-me">CONTACT ME</a>
-            <a className="button-styling-2">FOLLOW</a>
+            <Link to="" className="button-styling follow-me">
+              CONTACT ME
+            </Link>
+            <Link to="" className="button-styling-2">
+              FOLLOW
+            </Link>
           </div>
         </div>
       </div>
@@ -36,22 +41,22 @@ const Userprofile = (props) => (
           {props.products.map((i, idx) => {
             return (
               <div key={idx} className="user-project border">
-                <a className="a" href={i.url}>
+                <Link className="a" to={i.url}>
                   <div className="user-project-image-wrap">
                     <img className=" user-project-img" src={i.image[0]} />
                   </div>
-                </a>
+                </Link>
                 <div className="user-project-info">
                   <div>
                     <p className="p">
-                      <a className="a" href={i.url}>
+                      <Link className="a" to={i.url}>
                         {i.heading}
-                      </a>
+                      </Link>
                     </p>
                     <p className="p">
-                      <a className="a" href={i.parenturl}>
+                      <Link className="a" to={i.parenturl}>
                         {i.name}
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>

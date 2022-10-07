@@ -38,6 +38,15 @@
   padding: 0 10px;
 }
 
+.header .nav-link-left ul li a {
+  color: #010101;
+  text-decoration: none;
+}
+
+.header .nav-link-left ul li a:hover {
+  text-decoration: underline;
+}
+
 .header .nav-link-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
