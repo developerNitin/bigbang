@@ -52,10 +52,10 @@ $xxxxlargefontsize: 36px;
   scrollbar-width: none;
 }
 
-.featured-projects  {
+.featured-projects {
   .suggested-project-scroll-icons-1,
   .suggested-project-scroll-icons-2 {
-  margin-top: -25px;
+    margin-top: -25px;
     button {
       position: absolute;
       height: 40px;
@@ -78,50 +78,15 @@ $xxxxlargefontsize: 36px;
 }
 
 .featured-projects .user-works .user-project-wrap .user-project {
-  height: 30vh;
   display: inline-block;
   margin-right: 20px;
   width: calc(25% - 15px);
   &:last-child {
     margin-right: 0;
   }
-  .user-project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 30vh;
-    width: 100%;
-    margin-top: -30vh;
-    div {
-      margin-bottom: 0;
-      padding-top: 20px;
-      position: relative;
-      z-index: 100;
-      background: linear-gradient(
-        to bottom,
-        transparent 0%,
-        rgba(0, 0, 0, 0.6) 81%
-      );
-      display: none;
-      p {
-        margin-bottom: 20px;
-        margin-left: 10px;
-        a {
-          font-weight: bold;
-          color: $colorwhite;
-          font-size: $mediumfontsize;
-        }
-      }
-    }
-  }
-  &:hover {
-    .user-project-info div {
-      display: block;
-    }
-  }
 
   .user-project-image-wrap {
-    height: 30vh;
+    height: 100%;
   }
   .user-project-img {
     width: 100%;
@@ -133,27 +98,40 @@ $xxxxlargefontsize: 36px;
   h1 {
     font-size: $mediumfontsize;
   }
-  .user-project-detail {
-    padding: 7px 0 0 0;
-    display: flex;
-    a {
-      display: flex;
-      align-items: center;
-    }
-    div {
-      height: 25px;
-      width: 25px;
-      margin-right: 7px;
-      img {
-        width: inherit;
-        height: inherit;
-        border-radius: 50px;
-        cursor: pointer;
+}
+
+.featured-projects
+  .user-works
+  .user-project-wrap
+  .user-project
+  .user-project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  .user-project-info-child {
+    position: relative;
+    z-index: 100;
+    padding: 20px;
+    margin-top: -100%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(0, 0, 0, 0.6) 81%
+    );
+    :nth-child(1) {
+      margin-bottom: 5px;
+      a {
+        font-weight: bold;
+        color: $colorwhite;
+        font-size: $mediumfontsize;
       }
     }
-
-    .user-project-heading {
-      font-size: $mediumfontsize;
+    :nth-child(2) {
+      a {
+        color: $colorwhite;
+        font-size: $smallfontsize;
+      }
     }
   }
 }

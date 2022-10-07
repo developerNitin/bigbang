@@ -26,10 +26,6 @@
   display: none;
 }
 
-.suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap-wrap {
-  height: 30vh;
-}
-
 .suggested-project-parent .suggested-project .suggested-project-wrap img {
   width: 100%;
   height: 100%;
@@ -56,23 +52,20 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 30vh;
   width: 100%;
-  margin-top: -30vh;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div {
-  margin-bottom: 0;
-  padding-top: 20px;
   position: relative;
   z-index: 100;
+  padding: 20px;
+  margin-top: -100%;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.6)));
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 81%);
-  display: none;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div :nth-child(1) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div :nth-child(1) a {
@@ -81,17 +74,9 @@
   font-size: 16px;
 }
 
-.suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div :nth-child(2) {
-  margin-bottom: 13px;
-}
-
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div :nth-child(2) a {
   color: #ffffff;
   font-size: 14px;
-}
-
-.suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap .user-project-info div p {
-  margin-left: 10px;
 }
 
 .suggested-project-parent .suggested-project .suggested-project-wrap .suggested-project-img-wrap:hover .user-project-info div {

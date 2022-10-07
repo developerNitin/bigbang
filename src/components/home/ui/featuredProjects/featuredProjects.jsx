@@ -31,21 +31,18 @@ export default function FeaturedProjects() {
                   </div>
                 </Link>
                 <div className="user-project-info">
-                  <div>
+                  <div className="user-project-info-child">
                     <p className="p">
                       <Link className="a" to={i.url}>
                         {i.heading}
                       </Link>
                     </p>
+                    <p className="p">
+                      <Link className="a" to={i.parenturl}>
+                        {i.name}
+                      </Link>
+                    </p>
                   </div>
-                </div>
-                <div className="user-project-detail">
-                  <Link className="a" to={i.parenturl}>
-                    <div>
-                      <img src={i.image[0]} />
-                    </div>
-                    <h1 className="h1 user-project-heading">{i.name}</h1>
-                  </Link>
                 </div>
               </div>
             ))}

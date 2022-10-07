@@ -41,13 +41,13 @@ const Userprofile = (props) => (
           {props.products.map((i, idx) => {
             return (
               <div key={idx} className="user-project border">
-                <Link className="a" to={i.url}>
-                  <div className="user-project-image-wrap">
+                <div className="user-project-image-wrap">
+                  <Link className="a" to={i.url}>
                     <img className=" user-project-img" src={i.image[0]} />
-                  </div>
-                </Link>
+                  </Link>
+                </div>
                 <div className="user-project-info">
-                  <div>
+                  <div className="user-project-info-child">
                     <p className="p">
                       <Link className="a" to={i.url}>
                         {i.heading}
