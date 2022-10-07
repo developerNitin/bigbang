@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styling/header.css";
 
 export default function Header() {
@@ -35,12 +35,12 @@ export default function Header() {
         <div className="nav-link-left">
           <ul className="ul">
             <li className="navbar-logo">
-              <NavLink to="/">BigBang</NavLink>
+              <Link to="/">BigBang</Link>
             </li>
             {navlinks.map((i, idx) => {
               return (
                 <li key={idx}>
-                  <NavLink
+                  <Link
                     style={
                       activeLink === idx
                         ? { textDecoration: "underline" }
@@ -50,7 +50,7 @@ export default function Header() {
                     to={i.links}
                   >
                     {i.name}
-                  </NavLink>
+                  </Link>
                 </li>
               );
             })}
