@@ -1,7 +1,7 @@
 import "./Global.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./ui/header/header";
-import Footer from "./ui/footer/footer";
+import Header from "./UI/header/header";
+import Footer from "./UI/footer/footer";
 import React from "react";
 
 //userdata

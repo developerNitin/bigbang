@@ -1,7 +1,7 @@
 import "./style/product.css";
 
-import Suggestion from "../../ui/suggestion/suggestion";
-import Review from "../../ui/review/review";
+import Suggestion from "../../UI/suggestion/suggestion";
+import Review from "../../UI/review/review";
 
 import { AiFillStar } from "react-icons/ai";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import "./style/userprofile.css";
-import Review from "../../ui/review/review";
+import Review from "../../UI/review/review";
 import { Link } from "react-router-dom";
 
 const Userprofile = (props) => (
