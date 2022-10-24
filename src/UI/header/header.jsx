@@ -59,12 +59,12 @@ export default function Header() {
         <div className="nav-link-right">
           <ul className="ul">
             <li>
-              <Link to="" className="a">
+              <Link to="/auth" className="a">
                 Log in
               </Link>
             </li>
             <li>
-              <Link to="" className="button-styling nav-join-now">
+              <Link to="/auth" className="button-styling nav-join-now">
                 Join Now
               </Link>
             </li>
