@@ -67,8 +67,8 @@ const Product = (props) => {
                 </Link>
               </div>
               <div className="product-review">
-                <Link to="" className="a">
-                  <span className="product-info-review-stars">
+                <Link to="" className="a flex items-center">
+                  <span className="flex product-info-review-stars">
                     {[1, 2, 3, 4, 5].map((idx) => (
                       <span key={idx}>
                         <AiFillStar />

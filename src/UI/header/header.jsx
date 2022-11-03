@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import "./styling/header.css";
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState(0);
-  const activeClass = (index) => {
-    setActiveLink(index);
-  };
+  const [activeLink, setActiveLink] = useState("/");
+
   const navlinks = [
     {
       name: "Home",
@@ -34,7 +32,7 @@ export default function Header() {
       <div className="navbar">
         <div className="nav-link-left">
           <ul className="ul">
-            <li className="navbar-logo">
+            <li className=" navbar-logo">
               <Link to="/">BigBang</Link>
             </li>
             {navlinks.map((i, idx) => {
@@ -42,11 +40,11 @@ export default function Header() {
                 <li key={idx}>
                   <Link
                     style={
-                      activeLink === idx
+                      activeLink === i.name
                         ? { textDecoration: "underline" }
-                        : { textDecoration: "none" }
+                        : { }
                     }
-                    onClick={() => activeClass(idx)}
+                    onClick={() => setActiveLink(i.name)}
                     to={i.links}
                   >
                     {i.name}
@@ -64,7 +62,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/auth" className="button-styling nav-join-now">
+              <Link to="/auth/register" className="button-styling nav-join-now">
                 Join Now
               </Link>
             </li>

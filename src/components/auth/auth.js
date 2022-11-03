@@ -1,31 +1,38 @@
 import { Link } from "react-router-dom";
 
 const Auth = () => {
+  const inputType = ["Email", "Password"];
   return (
     <div className="flex h-screen">
-      <div className="w-[40%] border-r-[1px]"></div>
+      <div className="w-[40%] border-r-[1px] p-[70px]">
+        <Link to="/" className="text-[20px]">
+          BigBang
+        </Link>
+      </div>
       <div className="flex-1 p-[70px]">
         <div className="mb-[30px]">
-          <h1 className="text-[30px] mb-[8px] font-semibold">Sign up</h1>
+          <h1 className="text-[30px] mb-[8px] font-semibold ">Login</h1>
           <p className="text-[16px]">
-            Already have an account? <Link to="/auth/register">Register</Link>
+            Don't have an account?{" "}
+            <Link className="hover:underline" to="/auth/register">
+              Register
+            </Link>
           </p>
         </div>
         <div>
           <form>
             <div>
-              <span>Login as</span>
-              <div className="flex mt-[10px] gap-[20px] mb-[30px]">
-                <button className="w-[40%] py-[10px] border border-black rounded-[4px]">
-                  
-                </button>
-                <button className="w-[40%] py-[10px] border border-black rounded-[4px]">
-                  Seller
-                </button>
-              </div>
-              <div>
-                <input className="h-[40px] border"></input>
-              </div>
+              {inputType.map((i, idx) => {
+                return (
+                  <div key={idx}>
+                    <span>{i}</span>
+                    <input className="h-[50px] border-[1px] px-[10px] mt-[10px] mb-[30px] border-gray-400 w-full rounded-[4px]"></input>
+                  </div>
+                );
+              })}
+              <button className="px-[20px] py-[10px] border-[1px] border-gray-400 rounded-[4px]">
+                Login
+              </button>
             </div>
           </form>
         </div>

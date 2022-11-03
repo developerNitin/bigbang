@@ -34,6 +34,10 @@
   padding: 0 10px;
 }
 
+.header .nav-link-left ul .navbar-logo a:hover {
+  text-decoration: none;
+}
+
 .header .nav-link-left ul li {
   padding: 0 10px;
 }
