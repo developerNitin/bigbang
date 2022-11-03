@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 export default function SearchPage() {
   // const [searchHeading, setSearchHeading] = useState("");
+  let n = 0;
 
   return (
     <div className="search-page">
@@ -53,6 +54,11 @@ export default function SearchPage() {
         <div className="user-project-wrap">
           {data.map((i) => {
             return i.products.map((i, idx) => {
+              if (n == 16) {
+                return;
+              } else {
+                n++;
+              }
               return (
                 <div key={idx} className="user-project border">
                   <div className="user-project-image-wrap">
