@@ -47,6 +47,10 @@
   display: flex;
 }
 
+.featured-services .featured-services-wrap .featured-services-wrap-first-child .featured-services-wrap-first-child-wrap h1 {
+  margin-right: 30px;
+}
+
 .featured-services .featured-services-wrap .featured-services-wrap-first-child .featured-services-wrap-first-child-wrap-paragraph {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -4,6 +4,7 @@
   padding: 0 100px;
 }
 
+
 @media (max-width: 1200px) {
   .page {
     padding: 0 50px;
@@ -15,7 +16,6 @@
     padding: 0 20px;
   }
 }
-
 
 .h1,
 .p {

@@ -43,6 +43,11 @@ $xxxxlargefontsize: 36px;
       display: flex;
     }
   }
+  .featured-services-wrap-first-child-wrap {
+  h1 {
+    margin-right: 30px;
+  }
+  }
   .featured-services-wrap-first-child-wrap-paragraph {
     display: flex;
     p {
@@ -66,6 +71,7 @@ $xxxxlargefontsize: 36px;
   display: flex;
   height: 60vh;
   width: 50%;
+
   img {
     transition: all ease 0.3s;
   }

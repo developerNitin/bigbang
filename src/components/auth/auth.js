@@ -4,7 +4,16 @@ const Auth = () => {
   const inputType = ["Email", "Password"];
   return (
     <div className="flex h-screen">
-      <div className="w-[40%] border-r-[1px] p-[70px]">
+      <div className="flex flex-col justify-between w-[40%] border-r-[1px] p-[70px] pb-[100px]">
+        <div>
+          <h1 className="mb-[20px] text-[40px] font-bold ">
+            Start your journey with us.
+          </h1>
+          <p>
+            Discover the world best community of freelancers and explore
+            marketplace.
+          </p>
+        </div>
         <Link to="/" className="text-[20px]">
           BigBang
         </Link>

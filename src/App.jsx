@@ -29,7 +29,7 @@ export default function App() {
     setIsNavbarToggle(navbar.includes(location.pathname));
   }, [location]);
   return (
-    <div className="App">
+    <div className="App font-[montserrat]">
       {!isNavbarToggled && <Header />}
       <Suspense fallback={<h1 style={{ marginTop: "6rem" }}>Loading...</h1>}>
         <Routes>
